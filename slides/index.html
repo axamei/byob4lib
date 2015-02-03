@@ -69,7 +69,6 @@
 							<li>RWD out of the box</li>
 							<li>Unifies naming conventions among teams. Wrangle spaghetti code.</li>
 							<li>Teams with no designers: gets-the-job-done design that doesn’t suck. Looks "polished"</li>
-							<li>Somewhat customizable</li>
 						</ul>
 					</aside>
 				</section>
@@ -79,6 +78,10 @@
 						<ul>
 							<li>Fits twitter, not your projects</li>
 							<li>Bloat. 6000 lines of unminified css. I know bootstrap sass exists, but default includes everything.</li>
+							<li>Somewhat customizable, but why?</li>
+							<li>If you are already heavy customizing bootstrap
+								there is another way. Put your coding and design skills to a better end.</li> 
+							<li>It's the times new roman of the web</li>
 						</ul>
 					</aside>
 				</section>
@@ -132,7 +135,7 @@
 					<aside class="notes">
 						<ul>
 							<li>Accessiblity Issues</li>
-							<li>Do you want a framework with it's own polyfills?</li>
+							<li>Do you want a framework that requires it's own polyfills?</li>
 						</ul>
 					</aside>
 				</section>
@@ -141,7 +144,7 @@
 
 					<aside class="notes">
 						<ul>
-							<li>Great for web development, horrible for web designers</li>
+							<li>Great for web development, horrible for web designers (any famous designers/web devs to quote here.</li>
 							<li>All sites look the same. Ignores design.</li>
 							<li>Too prescriptive. The canvas is not blank.</li>
 							<li>Bootstrap is a development solution. Not a design one.</li>
@@ -153,6 +156,11 @@
 					</aside>
 				</section>
 				<section>
+					<p>First Problem:</p>
+					<p>Usability Study: Why do all your sites look totally 
+						different?</p>
+				</section>
+				<section>
 					<p>Wall of Shame</p>
 					<img src="img/homepage_circa_2013.png" />
 					<img src="img/libguides_circa_spring_2014.png" />
@@ -161,7 +169,55 @@
 							<li>Note the Problem Space: Drupal, Rails apps, in house PHP apps, Libguides, ILLiad… Different stacks. We have all kinds of apps with different markup structure.</li>
 							<li>Problem that libraries face that we want Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
 							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is a rarity]</li>
-							<li>How do we actually use bootstrap on all these different apps? Working with Bootstrap on existing systems can require a lot of work/fighting with existing markup.</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<p>Second Problem</p>
+					<p>Those websites run on numerous different platform</p>
+					<p>Some open, some closed, some you can decorate a bit.</p>
+					<aside class="notes">
+						<li>Open: ILLiad/Wordpress/Rails Applications/In House</li>
+						<li>Vendors with Source Markup/CSS: ILLiad/Ex Libris</li>
+						<li>Vendors who let you decorate: Springshare, Summon.</li>
+						<li>How do we actually use bootstrap on all these different apps? Working with Bootstrap on existing systems can require a lot of work/fighting with existing markup.</li>
+						<li>All that fighting, with what benefit.</li>
+					</aside>
+				</section>
+				<section>
+					<h1>Third Problem</h1>
+					<p>University is strongly/mandating that all the aformentioned sites comply with WCAG Guidelines.</p>
+					<pre class="fragment">
+					<code>
+<div class="panel-pane pane-views-panes pane-search-libraries-and-collections-panel-pane-1">
+   <h2 class="pane-title">Libraries and Collections</h2>
+   <div class="view view-search-libraries-and-collections view-id-search_libraries_and_collections view-display-id-panel_pane_1 view-dom-id-fa601f68708a107bc34bb1a20acf6190">
+    <div class="view-content">
+        <div class="item-list">
+            <ul>
+                <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                    <div>
+                        <h3><a href="/libraries/stokes">Stokes Library</a></h3> </div>
+                    <div class="views-field views-field-search-api-excerpt"> <span class="field-content"><strong>Main</strong> <strong>Catalog</strong>&nbsp;|&nbsp; … </span> </div>
+                    <div class="views-field views-field-field-collection-url-url"> <span class="field-content"></span> </div>
+                    <div class="views-field views-field-field-library-homepage-url"> <span class="field-content"><i class="icon-home">&nbsp;</i><a href="http://libguides.princeton.edu/stokes" title="Library Homepage">Library Homepage</a></span> </div>
+                    <div class="views-field views-field-field-building"> <span class="field-content"></span> </div>
+                    <div class="views-field views-field-field-phone"> <span class="field-content"><i class="icon-phone">&nbsp;</i>(609) 258-5455</span> </div>
+                    <div class="views-field views-field-field-e-mail-address"> <span class="field-content"><span class="icon-large icon-email"></span>piaprlib@princeton.edu </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </div>
+</div>
+
+					</code>
+					</pre>
+					<aside class="notes">
+						<ul>
+							<li>How are you going to fit bootstrap into that?</li>
+
 						</ul>
 					</aside>
 				</section>
@@ -170,7 +226,25 @@
 				</section>
 				<section>
 					<p>Modularity, FTW</p>
-
+					<pre class="fragment">
+						<code>
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+@import "vendor/bourbon/bourbon";
+@import "vendor/base/base";
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/branding";
+@import "components/header";
+@import "components/footer";
+@import "components/menus/menu--main";
+@import "components/search/search--header";
+						</code>
+					</pre>
 					<aside class="notes">
 						<ul>
 							<li>FTW = For the Web. For the Win.</li>
@@ -181,7 +255,9 @@
 							<li>Write code that you can come back to and understand months later - often an afterthought particularly with client side/css code - use CSS stats as a possible example</li>
 							<li>Legacy CSS code is often one heap of overly specific selectors and line after line of side effect coding - same goes for Jquery stew</li>
 							<li>Semantic over Presentation Markup</li>
-							<li>Examples of modular apps libraries use: Project Blacklight. Drupal 8</li>
+							<li>Lighten your markup/css footprint in the process</li>
+							<li>Feel like you are coding again</li>
+							<li>Examples of modular apps libraries use: Project Blacklight. Drupal 7</li>
 						</ul>
 					</aside>
 				</section>
@@ -193,7 +269,7 @@
 						<ul>
 							<li>Modular CSS with Sass (Syntactically Awesome Style Sheets)</li>
 							<li>Pre-Processor, abstraction, Less characters = faster development</li>
-							<li>Bootstrap sass gem. Gives you partials, more modular option. Typically developers use it all… maybe see if there is an example using CSS stats to illustrate this</li>
+							<li>Touch on why our approach is more than just using the Bootstrap sass gem. That gives you partials, more modular options. But... typically developers use it all… maybe see if there is an example using CSS stats to illustrate this</li>
 						</ul>
 					</aside>
 				</section>
@@ -205,6 +281,7 @@
 							<li>The first thing to do while starting to code CSS is to finalize the strategy in modularizing the CSS, for example you can decide if you are going to create separate stylesheets for each basic element of the UI, like typography, forms, iconography, buttons, layout, reset etc. Though it is recommended that you use multiple files for the sake of maintainability, it is always a front end engineers call, depending on the ability to smartly group the rules in a single file. SCSS files can be included within another, the same way as you do for CSS, with the following piece of code “import style”, where style is the SCSS file to be included</li>
 							<li>Naming conventions and file structures: SMACCS / BEM</li>
 							<li>Since BEM styles use a single class name as their selector, they have a very low CSS “specificity” value, and tend to get trampled on by global CSS styles that often have multiple levels of nested selectors, as well as tag names and IDs.</li>
+							<li>Tools like compass, grunt/gulp help you manage complexity.</li>
 						</ul>
 					</aside>
 				</section>
@@ -214,6 +291,7 @@
 						<ul>
 							<li>Variables for maintainability. Fewer deviations.</li>
 							<li>This feature can add a lot of value to your code, in terms of maintainability, and in cases where you are required to make app wide changes in a single go. Here is how you declare a variable using SASS: “$primary-color:#ccc;” Here ‘primary-color’ is the variable name and #ccc, is the color value that is stored in it. You can assign numbers, strings of text, colors, boolean and list of values separated by commas, to a variable. It’s important to identify exactly what needs to be converted to variables, for a maintainable SASS file. One can declare all the color values, images and font-family in variables, put all those variables in a single SCSS file, and include it in the main SCSS file. This will bring much more control over the theming of the UI, where we can quickly change the color values, iconography and other parameters which define the general look and feel of the UI.</li>
+							<li>Minimizing deviations also promotes better browser rendering speed.</li>
 						</ul>
 					</aside>
 				</section>
@@ -255,17 +333,39 @@
 							<li>UI Kit / Styles for common web components (You can start with some structure and a UI kit… )</li>
 							<li>Alternative solution: Bourbon / Bitters / Refills</li>
 							<li>If you include Neat, their grid system, it’s basically Bootstrap as a more modular system</li>
+							<li>For existing systems, less massaging of existing markup to carry out what you want. 
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<p>Singularity</p>
+					<pre class="fragment">
+					<code>
+	.pul_base_four_four_four_stacked-region--first {
+    @include grid-span(4,1);
+    clear: both;
+    margin-left: 0;
+    margin-right: 2.5%;
+  }
+   .pul_base_four_four_four_stacked-region--second {
+    @include grid-span(4,5);
+    margin: 0 2.5%;
+  }
+
+  .pul_base_four_four_four_stacked-region--third {
+    @include grid-span(4,9);
+    margin-left: 2.5%;
+    margin-right: 0;
+  }
+					</code>
+					</pre>
 					<aside class="notes">
 						<ul>
 							<li>Grid System (You can start from scratch… )</li>
 							<li>Alternative solution: Singularity</li>
 							<li>It’s easy and you can make your own!</li>
 							<li>Symmetric and asymmetric grid examples</li>
+							<li>The Bootstrap Alternative. Kill the cols and divs.</li>
 						</ul>
 					</aside>
 				</section>
@@ -297,6 +397,10 @@
 					<p>Where we're at. What we've been doing.</p>
 					<aside class="notes">
 						insert screenshots of versailles, illiad, libguides, etc.
+						<ul>
+							<li>A long way to go, but our sites are leaner, better designed, and more fun to build than every before.</li>
+							<li>
+						</ul>
 					</aside>
 				</section>
 				<section>
