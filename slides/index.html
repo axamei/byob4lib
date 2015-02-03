@@ -50,7 +50,7 @@
 					<blockquote>“Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.” <br/><br/>
 					<small>- Bootstrap</small></blockquote>
 
-					<aside class="notes">Genesis of tool: Bootstrap started as an internal tool at twitter that grew into a commonly used framework for front-end development. Forced to fit your project into the framework vs using it as a tool to help you design and develop your project. Why use another institution’s framework when you can build your own? </aside>
+					<aside class="notes">Genesis of tool: Bootstrap started as an internal tool at twitter that grew into a commonly used framework for front-end development. </aside>
 				</section>
 				<section>
 					<img src="img/doge.png">
@@ -76,17 +76,16 @@
 					<p>But, TBH, Bootstrap kind of sucks...</p>
 					<aside class="notes">
 						<ul>
-							<li>Fits twitter, not your projects</li>
+							<li>Forced to fit your project into the framework vs using it as a tool to help you design and develop your project. Why use another institution’s framework when you can build your own? Fits twitter, not your projects</li>
 							<li>Bloat. 6000 lines of unminified css. I know bootstrap sass exists, but default includes everything.</li>
 							<li>Somewhat customizable, but why?</li>
 							<li>If you are already heavy customizing bootstrap
 								there is another way. Put your coding and design skills to a better end.</li> 
-							<li>It's the times new roman of the web</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<a href="https://github.com/twbs/bootstrap/issues/3057" target="_blank"><img src="img/semicolon.png"></a>
+					<a href="https://github.com/twbs/bootstrap/issues/3057" data-preview-link><img src="img/semicolon.png"></a>
 
 					<aside class="notes">
 						<ul>
@@ -144,7 +143,7 @@
 
 					<aside class="notes">
 						<ul>
-							<li>Great for web development, horrible for web designers (any famous designers/web devs to quote here.</li>
+							<li>Great for web development, horrible for web designers... It's the times new roman of the web</li>
 							<li>All sites look the same. Ignores design.</li>
 							<li>Too prescriptive. The canvas is not blank.</li>
 							<li>Bootstrap is a development solution. Not a design one.</li>
@@ -156,38 +155,36 @@
 					</aside>
 				</section>
 				<section>
-					<p>First Problem:</p>
-					<p>Usability Study: Why do all your sites look totally 
-						different?</p>
-				</section>
-				<section>
 					<p>Wall of Shame</p>
-					<img src="img/homepage_circa_2013.png" />
-					<img src="img/libguides_circa_spring_2014.png" />
+					<img src="img/homepage_circa_2013.png" style="width: 50%; float:left;" />
+					<img src="img/libguides_circa_spring_2014.png" style="width: 50%; float:right;" />
 					<aside class="notes">
 						<ul>
-							<li>Note the Problem Space: Drupal, Rails apps, in house PHP apps, Libguides, ILLiad… Different stacks. We have all kinds of apps with different markup structure.</li>
+							<li>First Problem: Usability Study: Why do all your sites look totally 
+						different?</li>
 							<li>Problem that libraries face that we want Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
 							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is a rarity]</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<p>Second Problem</p>
-					<p>Those websites run on numerous different platform</p>
-					<p>Some open, some closed, some you can decorate a bit.</p>
+					<p>ILLiad, Wordpress, Rails apps, In-house php apps, Drupal, etc.</p>
 					<aside class="notes">
-						<li>Open: ILLiad/Wordpress/Rails Applications/In House</li>
-						<li>Vendors with Source Markup/CSS: ILLiad/Ex Libris</li>
-						<li>Vendors who let you decorate: Springshare, Summon.</li>
-						<li>How do we actually use bootstrap on all these different apps? Working with Bootstrap on existing systems can require a lot of work/fighting with existing markup.</li>
-						<li>All that fighting, with what benefit.</li>
+						<ul>
+							<li>Second Problem: Those websites run on numerous different platform</li>
+							<li>Note the Problem Space: Drupal, Rails apps, in house PHP apps, Libguides, ILLiad… Different stacks. We have all kinds of apps with different markup structure.</li>
+							<li>Some open, some closed, some you can decorate a bit.</li>
+							<li>Open: ILLiad/Wordpress/Rails Applications/In House</li>
+							<li>Vendors with Source Markup/CSS: ILLiad/Ex Libris</li>
+							<li>Vendors who let you decorate: Springshare, Summon.</li>
+							<li>How do we actually use bootstrap on all these different apps? Working with Bootstrap on existing systems can require a lot of work/fighting with existing markup.</li>
+							<li>All that fighting, with what benefit.</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
-					<h1>Third Problem</h1>
-					<p>University is strongly/mandating that all the aformentioned sites comply with WCAG Guidelines.</p>
-					<pre class="fragment">
+					<p>WCAG 2.0</p>
+					<!-- <pre>
 					<code>
 <div class="panel-pane pane-views-panes pane-search-libraries-and-collections-panel-pane-1">
    <h2 class="pane-title">Libraries and Collections</h2>
@@ -213,9 +210,10 @@
 </div>
 
 					</code>
-					</pre>
+					</pre> -->
 					<aside class="notes">
 						<ul>
+							<li>Third Problem: University is strongly/mandating that all the aformentioned sites comply with WCAG Guidelines.</li>
 							<li>How are you going to fit bootstrap into that?</li>
 
 						</ul>
@@ -226,25 +224,6 @@
 				</section>
 				<section>
 					<p>Modularity, FTW</p>
-					<pre class="fragment">
-						<code>
-// Import external libraries.
-@import "compass";
-@import "breakpoint";
-@import "singularitygs";
-@import "toolkit";
-@import "vendor/bourbon/bourbon";
-@import "vendor/base/base";
-@import "variables/**/*";
-@import "abstractions/**/*";
-@import "base/**/*";
-@import "components/branding";
-@import "components/header";
-@import "components/footer";
-@import "components/menus/menu--main";
-@import "components/search/search--header";
-						</code>
-					</pre>
 					<aside class="notes">
 						<ul>
 							<li>FTW = For the Web. For the Win.</li>
@@ -254,7 +233,6 @@
 							<li>Consistency. Reuse. Time saving.</li>
 							<li>Write code that you can come back to and understand months later - often an afterthought particularly with client side/css code - use CSS stats as a possible example</li>
 							<li>Legacy CSS code is often one heap of overly specific selectors and line after line of side effect coding - same goes for Jquery stew</li>
-							<li>Semantic over Presentation Markup</li>
 							<li>Lighten your markup/css footprint in the process</li>
 							<li>Feel like you are coding again</li>
 							<li>Examples of modular apps libraries use: Project Blacklight. Drupal 7</li>
@@ -275,6 +253,25 @@
 				</section>
 				<section>
 					<p>Modular Components / Partials</p>
+					<pre>
+						<code>
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+@import "vendor/bourbon/bourbon";
+@import "vendor/base/base";
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/branding";
+@import "components/header";
+@import "components/footer";
+@import "components/menus/menu--main";
+@import "components/search/search--header";
+						</code>
+					</pre>
 					<aside class="notes">
 						<ul>
 							<li>@import and modularize via partials</li>
@@ -405,11 +402,11 @@
 				</section>
 				<section>
 					<p>CSS Stats</p>
+					<a href="http://cssstats.com" data-preview-link>CSS Stats Screenshot</a>
 					<aside class="notes">
 						<ul>
 							<li>Reduce; Reuse; Refactor</li>
 							<li>We’re super productive now!</li>
-							<li>Learning how to modularize your front-end can pay off in a big way. The extra work you go to in the beginning leads to a much cleaner code base that is easy to maintain for a long time. Because it’s designed to be scalable, it works on sites large and small. Keep standards: Usability, accessibility, performance, etc.</li>
 						</ul>
 					</aside>
 				</section>
@@ -423,19 +420,20 @@
 
 					<aside class="notes">
 						<ul>
-							<li>Readymade design patterns: Grid system, typography, forms, buttons, navigation, etc.</li>
-							<li>Bootstrap development is FAST</li>
-							<li>Helps develop in browser. No mockups needed. Test look and feel. Efficient. Agile. Allows for rapid prototyping</li>
-							<li>RWD out of the box</li>
-							<li>Unifies naming conventions among teams. Wrangle spaghetti code.</li>
+							<li>Learning how to modularize your front-end can pay off in a big way. The extra work you go to in the beginning leads to a much cleaner code base that is easy to maintain for a long time. Because it’s designed to be scalable, it works on sites large and small. Keep standards: Usability, accessibility, performance, etc.</li>
+							<li>Your own design system: Grid system, typography, forms, buttons, navigation, etc.</li>
+							<li>BYOB development is FAST</li>
+							<li>Still able to develop in browser. No mockups needed. Test look and feel. Efficient. Agile. Allows for rapid prototyping</li>
+							<li>RWD is so easy with Breakpoint</li>
+							<li>Unifies naming conventions among teams. Wrangle spaghetti code. with BEM. Name your own structure / components</li>
 							<li>Teams with no designers: gets-the-job-done design that doesn’t suck. Looks "polished"</li>
-							<li>Somewhat customizable</li>
+							<li>Very artisinal. customizable</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<h1>QUESTIONS?</h1>
-					<h3>If we don't have time, ttyl.</h3>
+					<h3>If we don't have time, TTYL.</h3>
 				</section>
 			</div>
 
