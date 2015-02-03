@@ -44,13 +44,24 @@
 				<section>
 					<h1>Build Your Own<br/> <div class="bootstrap-logo">B</div>ootstrap</h1>
 					<p><small><br>Axa Liauw &amp; Kevin Reiss</small></p>
-					<aside class="notes">Introductions. Who are we?</aside>
+					<aside class="notes">
+						<ul>
+							<li>Say my name, job, institution</li>
+							<li>We're going to talk about how you can build your own bootstrap.</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<blockquote>“Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.” <br/><br/>
 					<small>- Bootstrap</small></blockquote>
 
-					<aside class="notes">Genesis of tool: Bootstrap started as an internal tool at twitter that grew into a commonly used framework for front-end development. </aside>
+					<aside class="notes">
+						<ul>
+							<li>Read quote</li>
+							<li>Bootstrap started as an internal tool at twitter that grew into a commonly used framework for front-end development.</li>
+							<li>So commonly used that it's been the most starred git repository since Feb 2012 because Bootstrap is awesome</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<img src="img/doge.png">
@@ -62,40 +73,37 @@
 
 					<aside class="notes">
 						<ul>
-							<li>Most starred git repo since Feb '12 - Current. Documentation is really easy to understand and navigate.</li>
+							<li>Responsive out of the box</li>
 							<li>Readymade design patterns: Grid system, typography, forms, buttons, navigation, etc.</li>
-							<li>Bootstrap development is FAST</li>
-							<li>Helps develop in browser. No mockups needed. Test look and feel. Efficient. Agile. Allows for rapid prototyping</li>
-							<li>RWD out of the box</li>
-							<li>Unifies naming conventions among teams. Wrangle spaghetti code.</li>
-							<li>Teams with no designers: gets-the-job-done design that doesn’t suck. Looks "polished"</li>
+							<li>Teams with no designers can get-the-job-done with a more polished look</li>
+							<li>Bootstrap development is FAST. Helps develop in browser. No mockups needed. Test look and feel for usability. Efficient. Agile. Allows for rapid prototyping</li>
+							<li>Tons of libraries use it</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<p>But, TBH, Bootstrap kind of sucks...</p>
+					<p>But, TBH, Bootstrap comes with problems...</p>
 					<aside class="notes">
 						<ul>
-							<li>Forced to fit your project into the framework vs using it as a tool to help you design and develop your project. Why use another institution’s framework when you can build your own? Fits twitter, not your projects</li>
-							<li>Bloat. 6000 lines of unminified css. I know bootstrap sass exists, but default includes everything.</li>
-							<li>Somewhat customizable, but why?</li>
-							<li>If you are already heavy customizing bootstrap
-								there is another way. Put your coding and design skills to a better end.</li> 
+							<li>Remember, it's TWITTER BOOTSTRAP. It's initially designed for twitter, not your projects.</li>
+							<li>Don't be forced to fit your project into a framework. Why use another institution’s framework when you can build your own? </li>
 						</ul>
 					</aside>
 				</section>
 				<section>
+					<p>Ask @douglascrockford about ;</p>
 					<a href="https://github.com/twbs/bootstrap/issues/3057" data-preview-link><img src="img/semicolon.png"></a>
 
 					<aside class="notes">
 						<ul>
 							<li>Does not follow standards</li>
-							<li>No semi-colons; https://github.com/twbs/bootstrap/issues/3057</li>
+							<li>Ask Douglas Crockford about semicolons</li>
+							<li>See the github issue thread about use of no semi-colons! https://github.com/twbs/bootstrap/issues/3057</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					Bootstrap &lt;div&gt;itis or &lt;div&gt;abetes
+					Bootstrap &lt;div&gt;itis and unsemantic markup
 					<pre><code>
 <div class="panel-display clearfix">
     <div class="row">
@@ -107,7 +115,6 @@
                         <div class="media-body">
                             <h4 class="media-heading">Media heading</h4> 
                             ...
-                            <!-- Nested media object -->
                             <div class="media">
                                 ...
                             </div>
@@ -118,50 +125,52 @@
         </div>
     </div>
 </div>
-
 					</code></pre>
 
 					<aside class="notes">
 						<ul>
-							<li>div class=”row” and div class=”col-sm” are not semantic. Also, divitis / divabetes.</li>
-							<li>write lean, consistent and semantic coding instead.</li>
-							<li>Semantic over Presentation Markup</li>
+							<li>Another example of not following best practices is...</li>
+							<li>Excessive use of divs, a condition also known as divitis</li>
+							<li>div class=”row” and div class=”col-sm” are not semantic.</li>
+							<li>Libraries love semantics. What happened to content over presentation?</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
-					<a href="http://paypal.github.io/bootstrap-accessibility-plugin/"><img src="img/bootstrap_accessiblity.png"></a>
+					<p>Plugin for Accessibility? Seriously?!?!</p>
+					<a href="http://paypal.github.io/bootstrap-accessibility-plugin/" data-preview-link><img src="img/bootstrap_accessiblity.png"></a>
+
 					<aside class="notes">
 						<ul>
-							<li>Accessiblity Issues</li>
-							<li>Do you want a framework that requires it's own polyfills?</li>
+							<li>Accessibility is no longer an option. It should be part of your app.</li>
+							<li>Bootsrap is not accessible out of the box. But there is an accessibility plugin...</li>
+							<li>Do you want a framework that requires its own polyfills?</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
+					<p>Designers vs. Bootstrap</p>
+					<div class="talkbubble">
+					  <textarea>Bootstrap is the Times New Roman of the web!!!</textarea>
+					</div>
 					<img src="img/designer-v-bootstrap.jpg">
 
 					<aside class="notes">
 						<ul>
-							<li>Great for web development, horrible for web designers... It's the times new roman of the web</li>
-							<li>All sites look the same. Ignores design.</li>
-							<li>Too prescriptive. The canvas is not blank.</li>
+							<li>Great for web development, horrible for web designers... It's the times new roman of the web. All sites basically look the same. Ignores design. Too prescriptive. The canvas is not blank.</li>
 							<li>Bootstrap is a development solution. Not a design one.</li>
-							<li>Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic.</li>
-							<li>Customizable to a point. Forced to fit your project into the framework vs using it as a tool to help you design and develop your project.</li>
-							<li>Nuisance to modify</li>
-							<li>HTML and CSS are coupled. Col-span madness</li>
+							<li>Designers want more flexibility and creative freedom</li>
+							<li>Yes, it's somewhat customizable, but why bother?</li>
+							<li>If you are already heavily customizing bootstrap, you might want to make your own instead. Put your coding and design skills to better use.</li> 
+							<li>HTML and CSS are coupled which leads to col- and div- sanity and lack of creative freedom</li>
 						</ul>
 					</aside>
 				</section>
-				<section>
-					<p>Wall of Shame</p>
-					<img src="img/homepage_circa_2013.png" style="width: 50%; float:left;" />
-					<img src="img/libguides_circa_spring_2014.png" style="width: 50%; float:right;" />
+				<section data-background="img/wall-of-shame.png">
+					<h1 class="rainbow">Wall of Shame</h1>
 					<aside class="notes">
 						<ul>
-							<li>First Problem: Usability Study: Why do all your sites look totally 
-						different?</li>
+							<li>First Problem: Usability Study: Why do all your sites look totally different?</li>
 							<li>Problem that libraries face that we want Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
 							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is a rarity]</li>
 						</ul>
@@ -169,6 +178,7 @@
 				</section>
 				<section>
 					<p>ILLiad, Wordpress, Rails apps, In-house php apps, Drupal, etc.</p>
+					<p>insert logos here</p>
 					<aside class="notes">
 						<ul>
 							<li>Second Problem: Those websites run on numerous different platform</li>
@@ -184,38 +194,14 @@
 				</section>
 				<section>
 					<p>WCAG 2.0</p>
-					<!-- <pre>
-					<code>
-<div class="panel-pane pane-views-panes pane-search-libraries-and-collections-panel-pane-1">
-   <h2 class="pane-title">Libraries and Collections</h2>
-   <div class="view view-search-libraries-and-collections view-id-search_libraries_and_collections view-display-id-panel_pane_1 view-dom-id-fa601f68708a107bc34bb1a20acf6190">
-    <div class="view-content">
-        <div class="item-list">
-            <ul>
-                <li class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-                    <div>
-                        <h3><a href="/libraries/stokes">Stokes Library</a></h3> </div>
-                    <div class="views-field views-field-search-api-excerpt"> <span class="field-content"><strong>Main</strong> <strong>Catalog</strong>&nbsp;|&nbsp; … </span> </div>
-                    <div class="views-field views-field-field-collection-url-url"> <span class="field-content"></span> </div>
-                    <div class="views-field views-field-field-library-homepage-url"> <span class="field-content"><i class="icon-home">&nbsp;</i><a href="http://libguides.princeton.edu/stokes" title="Library Homepage">Library Homepage</a></span> </div>
-                    <div class="views-field views-field-field-building"> <span class="field-content"></span> </div>
-                    <div class="views-field views-field-field-phone"> <span class="field-content"><i class="icon-phone">&nbsp;</i>(609) 258-5455</span> </div>
-                    <div class="views-field views-field-field-e-mail-address"> <span class="field-content"><span class="icon-large icon-email"></span>piaprlib@princeton.edu </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-   </div>
-</div>
-
+					<p>insert wise words about accessibility</p>
 					</code>
 					</pre> -->
 					<aside class="notes">
 						<ul>
 							<li>Third Problem: University is strongly/mandating that all the aformentioned sites comply with WCAG Guidelines.</li>
 							<li>How are you going to fit bootstrap into that?</li>
-
+							<li>Bootstrap accessibility plugin is not a possible solution for all those platforms</li>
 						</ul>
 					</aside>
 				</section>
@@ -224,6 +210,7 @@
 				</section>
 				<section>
 					<p>Modularity, FTW</p>
+					insert image representing modularity
 					<aside class="notes">
 						<ul>
 							<li>FTW = For the Web. For the Win.</li>
@@ -234,8 +221,8 @@
 							<li>Write code that you can come back to and understand months later - often an afterthought particularly with client side/css code - use CSS stats as a possible example</li>
 							<li>Legacy CSS code is often one heap of overly specific selectors and line after line of side effect coding - same goes for Jquery stew</li>
 							<li>Lighten your markup/css footprint in the process</li>
-							<li>Feel like you are coding again</li>
-							<li>Examples of modular apps libraries use: Project Blacklight. Drupal 7</li>
+							<li>Feel like you are coding again. It's more engaging and fun!</li>
+							<li>Examples of modular apps libraries use: Project Blacklight. Drupal 8</li>
 						</ul>
 					</aside>
 				</section>
@@ -245,16 +232,19 @@
 
 					<aside class="notes">
 						<ul>
+							<li>Our approach at a modular front-end is with Sass</li>
 							<li>Modular CSS with Sass (Syntactically Awesome Style Sheets)</li>
+							<li>Compiles to CSS</li>
 							<li>Pre-Processor, abstraction, Less characters = faster development</li>
-							<li>Touch on why our approach is more than just using the Bootstrap sass gem. That gives you partials, more modular options. But... typically developers use it all… maybe see if there is an example using CSS stats to illustrate this</li>
+							<li>More than just using the Bootstrap sass gem. First, default is not to include everything. You have to choose what to include. Also, this is a more granular approach.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<p>Modular Components / Partials</p>
-					<pre>
-						<code>
+					<div class="scss">
+						<p>Manifest</p>
+						<pre><code>
 // Import external libraries.
 @import "compass";
 @import "breakpoint";
@@ -262,6 +252,7 @@
 @import "toolkit";
 @import "vendor/bourbon/bourbon";
 @import "vendor/base/base";
+
 @import "variables/**/*";
 @import "abstractions/**/*";
 @import "base/**/*";
@@ -270,12 +261,42 @@
 @import "components/footer";
 @import "components/menus/menu--main";
 @import "components/search/search--header";
-						</code>
-					</pre>
+						</code></pre>
+					</div>
+					
+					<div class="css">
+						<p>Directory Structure</p>
+						<pre><code>
+byob-sass/
+|
+|-- abstraction/          # Reusables
+|   |-- _mixins.scss      
+|   |-- _extends.scss     
+|   ...
+|
+|-- base/             	  # Base elements
+|   |-- _headings.scss     
+|   ...
+|
+|-- components/           # Granularity
+|   |-- _buttons.scss           
+|   ...
+|
+|-- vendor/               
+|   |-- _jquery.ui.core.scss
+|   ...
+|
+-- main.scss            # Manifest							
+						</code></pre>
+					</div>
 					<aside class="notes">
 						<ul>
-							<li>@import and modularize via partials</li>
+							<li>Copy of our main sass file and what our modular dir structure looks like</li>
+							<li>Abstractions contains Sass mixins, extends and functions for use throughout your stylesheets and help to promote code reuse.</li>
+							<li>Base styles define the default look for HTML and, to some extent, common Drupal elements. These rules will generally be made up of element selectors for HTML elements such as headings, paragraphs and lists. Common Drupal elements, such as basic form items, should be covered as well.</li>
+							<li>Components: This directory should contain full components (modules in SMACSS), their sub-components and modifiers. Components are discrete parts of your page that should sit within the regions of your layouts. You should try to abstract your components as much as possible to promote reuse throughout the theme.</li>
 							<li>The first thing to do while starting to code CSS is to finalize the strategy in modularizing the CSS, for example you can decide if you are going to create separate stylesheets for each basic element of the UI, like typography, forms, iconography, buttons, layout, reset etc. Though it is recommended that you use multiple files for the sake of maintainability, it is always a front end engineers call, depending on the ability to smartly group the rules in a single file. SCSS files can be included within another, the same way as you do for CSS, with the following piece of code “import style”, where style is the SCSS file to be included</li>
+							<li>Sass Globbing gem</li>
 							<li>Naming conventions and file structures: SMACCS / BEM</li>
 							<li>Since BEM styles use a single class name as their selector, they have a very low CSS “specificity” value, and tend to get trampled on by global CSS styles that often have multiple levels of nested selectors, as well as tag names and IDs.</li>
 							<li>Tools like compass, grunt/gulp help you manage complexity.</li>
@@ -284,26 +305,116 @@
 				</section>
 				<section>
 					<p>Preventing Deviations</p>
+					<div class="scss">
+						<p>SCSS:</p>
+						<pre><code>
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+					</code></pre>
+					</div>
+					<div class="css">
+						<p>CSS:</p>
+						<pre><code>
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}						
+					</code></pre>
+					</div>
+					
 					<aside class="notes">
 						<ul>
 							<li>Variables for maintainability. Fewer deviations.</li>
-							<li>This feature can add a lot of value to your code, in terms of maintainability, and in cases where you are required to make app wide changes in a single go. Here is how you declare a variable using SASS: “$primary-color:#ccc;” Here ‘primary-color’ is the variable name and #ccc, is the color value that is stored in it. You can assign numbers, strings of text, colors, boolean and list of values separated by commas, to a variable. It’s important to identify exactly what needs to be converted to variables, for a maintainable SASS file. One can declare all the color values, images and font-family in variables, put all those variables in a single SCSS file, and include it in the main SCSS file. This will bring much more control over the theming of the UI, where we can quickly change the color values, iconography and other parameters which define the general look and feel of the UI.</li>
+							<li>This feature can add a lot of value to your code, in terms of maintainability, and in cases where you are required to make app wide changes in a single go. Here is how you declare a variable using SASS: “$primary-color:#ccc;” Here ‘primary-color’ is the variable name and #ccc, is the color value that is stored in it. 
+							<li>You can assign numbers, strings of text, colors, boolean and list of values separated by commas, to a variable.</li>
+							<li>no more hunt and peck</li>
+							 It’s important to identify exactly what needs to be converted to variables, for a maintainable SASS file. One can declare all the color values, images and font-family in variables, put all those variables in a single SCSS file, and include it in the main SCSS file. This will bring much more control over the theming of the UI, where we can quickly change the color values, iconography and other parameters which define the general look and feel of the UI.</li>
 							<li>Minimizing deviations also promotes better browser rendering speed.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<p>Selector Inheritance</p>
+					<div class="scss">
+						<p>SCSS:</p>
+						<pre><code>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}						
+					</code></pre>
+					</div>
+					<div class="css">
+						<p>CSS:</p>
+						<pre><code>
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}						
+					</code></pre>
+					</div>
+	
 					<aside class="notes">
 						<ul>
 							<li>Nesting / selector inheritance</li>
-							<li>Warning: inception rule / don’t go more than 4 levels deep</li>
+							<li>Warning: inception rule / don’t go more than 4 levels deep coz it gets messy. and too specific.</li>
 							<li>SASS generates an insanely deep grouping of selectors, if not used wisely, this can put more pressure on the browser rendering engine to try to target the tag, as per the selector mentioned. So, it’s really important to smartly organize and arrange the selectors, so that there is no deep grouping (eg. SASS can generate selectors like .header .subheader .nav.primary .listitem .active .dropdown{color:red; font-size:2em;}). Due to complex and deep grouping of selectors, specificity nightmares can keep you up at night if not handled sensibly.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<p>Reusable Code</p>
+					<div class="scss">
+						<p>SCSS:</p> 
+						<pre><code>
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }						
+						</code></pre>
+					</div>
+					<div class="css">
+						<p>CSS:</p>
+						<pre><code>
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}							
+						</code></pre>
+					</div>
 					<aside class="notes">
 						<ul>
 							<li>Mixins improve reusability</li>
@@ -314,6 +425,7 @@
 				</section>
 				<section>
 					<p>Our Toolbox</p>
+					Git, Node, NPM, Ruby, Bower / Bundler, Grunt / Gulp, Bourbon family, Singularity, Breakpoint, etc.
 					<aside class="notes">
 						insert logos for Bourbon family, Singularity, Breakpoint, grunt, bower
 						<ul>
@@ -324,7 +436,11 @@
 					</aside>
 				</section>
 				<section>
-					<p>Bourbon Family</p>
+					<p>UI Kit</p>
+					<img src="img/bourbon-logo.png" alt=""><br>
+					<img src="img/neat-logo.svg" alt="" style="width:300px;"><br>
+					<img src="img/bitters-logo.svg" alt=""><br>
+					<img src="img/refills-logo.svg" alt="">
 					<aside class="notes">
 						<ul>
 							<li>UI Kit / Styles for common web components (You can start with some structure and a UI kit… )</li>
@@ -336,8 +452,7 @@
 				</section>
 				<section>
 					<p>Singularity</p>
-					<pre class="fragment">
-					<code>
+					<pre><code>
 	.pul_base_four_four_four_stacked-region--first {
     @include grid-span(4,1);
     clear: both;
@@ -354,8 +469,7 @@
     margin-left: 2.5%;
     margin-right: 0;
   }
-					</code>
-					</pre>
+					</code></pre>
 					<aside class="notes">
 						<ul>
 							<li>Grid System (You can start from scratch… )</li>
@@ -368,6 +482,29 @@
 				</section>
 				<section>
 					<p>Breakpoint</p>
+						<pre><code>
+// assume min-width (by default) if only a number
+$high-tide: 500px;
+// set min-width/max-width if both values are numbers
+$ex-presidents: 600px 800px;
+// if one value is a string, assume a feature/value pair
+$surfboard-width: max-width 1000px;
+// string tests together within parentheses, assume each item is a feature value pair
+$surfboard-height: (min-height 1000px) (orientation portrait);
+
+.reagan {
+  @include breakpoint($high-tide) {
+    content: 'High tide';
+  }
+}
+
+@media (min-width: 500px) {
+  .reagan {
+    content: 'High tide';
+  }
+}							
+						</code></pre>
+						<span id="SPAN_1">Whoa.</span>
 					<aside class="notes">
 						<ul>
 							<li>Responsive Web Design(You can start from scratch… )</li>
@@ -378,6 +515,10 @@
 				</section>
 				<section>
 					<p>Build Tools</p>
+					<img src="img/grunt-logo.svg" alt="" style="height: 200px;">
+					<img src="img/gulp-logo.png" alt="" style="height: 200px;">
+					<img src="img/bower-logo.png" alt="" style="height: 200px;">
+					<img src="img/bundler-logo.png" alt="" style="height: 200px;">
 					<aside class="notes">
 						insert logo for grunt and bower
 						<ul>
@@ -392,6 +533,7 @@
 				</section>
 				<section>
 					<p>Where we're at. What we've been doing.</p>
+					<p>insert screenshots with pul_base theme</p>
 					<aside class="notes">
 						insert screenshots of versailles, illiad, libguides, etc.
 						<ul>
@@ -402,7 +544,7 @@
 				</section>
 				<section>
 					<p>CSS Stats</p>
-					<a href="http://cssstats.com" data-preview-link>CSS Stats Screenshot</a>
+					<a href="http://cssstats.com" data-preview-link><img src="img/css-stats.png" alt="" style="height: 400px;"></a>
 					<aside class="notes">
 						<ul>
 							<li>Reduce; Reuse; Refactor</li>
@@ -434,6 +576,8 @@
 				<section>
 					<h1>QUESTIONS?</h1>
 					<h3>If we don't have time, TTYL.</h3>
+					<p>https://github.com/axapu/2015-code4lib-byob<br>
+					Slides: http://axapu.github.io/2015-code4lib-byob/slides/#/</p>
 				</section>
 			</div>
 
