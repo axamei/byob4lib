@@ -28,57 +28,64 @@ Breakpoint, and Bourbon.
 
 Available via http://axapu.github.io/2015-code4lib-byob/slides/#/
 
-## Tools that are awesome
-
-### Sass
-
-### Singularity
-
-### Breakpoint
-
-### Bourbon
-
-### Grunt
-
 ## Resources
 
-Useful tools:
-CSS Stats - http://cssstats.com/ 
-Sache - http://www.sache.in/ 
-Grunt Plugins - http://gruntjs.com/plugins 
-Imagemin
-LiveReload
-Playgrounds
-CodePen - http://codepen.io/ 
-SassMeister - http://sassmeister.com/
-GUI Sass compilers
-CodeKit - https://incident57.com/codekit/ 
-Compass.app - 
-Grid Systems
-Flint - http://flint.gs/ 
-Jeet - http://jeet.gs/ 
-Neat - http://neat.bourbon.io 
-Singularity - http://singularity.gs
-Susy - http://susy.oddbird.net/ 
+###Useful tools:
+CSS Stats - [http://cssstats.com/](http://cssstats.com/) 
 
-Sass tools (mentioned in our talk) that can replace Bootstrap:
-Compass - http://compass-style.org/ 
+Sache - [http://www.sache.in/](http://www.sache.in/)
+
+Grunt Plugins - [http://gruntjs.com/plugins](http://gruntjs.com/plugins) 
+
+###Playgrounds:
+CodePen - [http://codepen.io/](http://codepen.io/)
+
+SassMeister - [http://sassmeister.com/](http://sassmeister.com/)
+
+##GUI Sass compilers:
+CodeKit - [https://incident57.com/codekit/](https://incident57.com/codekit/)
+
+Compass.app - [http://compass.kkbox.com/](http://compass.kkbox.com/)
+
+###Grid Systems:
+Flint - [http://flint.gs/](http://flint.gs/)
+
+Jeet - [http://jeet.gs/](http://jeet.gs/)
+
+Neat - [http://neat.bourbon.io](http://neat.bourbon.io)
+
+Singularity - [http://singularity.gs](http://singularity.gs)
+
+Susy - [http://susy.oddbird.net/](http://susy.oddbird.net/)
+
+###Sass tools (mentioned in our talk) that can replace Bootstrap:
+Compass - http://compass-style.org/
+
 Bourbon - http://bourbon.io 
+
 Bitters - http://bitters.bourbon.io
+
 Refills - http://refills.bourbon.io 
+
 Singularity - http://singularity.gs 
+
 Breakpoint - http://breakpoint-sass.com/ 
 
-Articles about Sass:
+###Articles about Sass:
 http://alistapart.com/article/dry-ing-out-your-sass-mixins 
 
-Useful Sass resources (documentation, books, blogs, listservs):
+###Useful Sass resources (documentation, books, blogs, listservs):
 Documentation: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+
 SassConf - http://sassconf.com 
+
 Scalable and Modular Architecture for CSS - https://smacss.com/ 
+
 The Sass Way http://thesassway.com/ 
 
-Haters gonna hate:
+###Haters gonna hate:
 http://snugug.github.io/winning-the-web/ 
+
 http://notes.gross.is/post/43508972396/please-stop-using-twitter-bootstrap 
+
 http://fourword.fourkitchens.com/article/you-dont-need-bootstrap 
