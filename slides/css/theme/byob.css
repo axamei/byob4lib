@@ -602,4 +602,58 @@ div.scss pre code {
     outline: rgb(241, 110, 23) none 0px;
 }/*#A_5*/
 
+.container {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 175px;
+  padding-top: 20px;
+  padding-left: 20px;
+
+}
+
+.Browser {
+  border: 2px solid lightgrey;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.Browser--content {
+  background: lightgrey;
+}
+
+.reveal section .Browser--content img {
+  margin:0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Browser--chrome {
+  position: relative;
+  background-color: lightgrey;
+  height: 15px;
+}
+
+.Browser--chrome--controls, .Browser--chrome--controls1, .Browser--chrome--controls2, .Browser--chrome--controls3 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 15px;
+  background-color: grey;
+}
+
+.Browser--chrome--controls1 {
+  top: 6.5px;
+  left: 4px;
+}
+
+.Browser--chrome--controls2 {
+  top: 6.5px;
+  left: 14px;
+}
+
+.Browser--chrome--controls3 {
+  top: 6.5px;
+  left: 24px;
+}
 
