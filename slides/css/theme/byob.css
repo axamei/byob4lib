@@ -657,3 +657,8 @@ div.scss pre code {
   left: 24px;
 }
 
+img.logo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
