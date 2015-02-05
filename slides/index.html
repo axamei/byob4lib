@@ -156,7 +156,7 @@
 							<li>Paypal Project is clever but....</li>
 							<li>Accessibility is no longer an option. It should be part of your app.</li>
 							<li>Bootsrap is not accessible out of the box. But there is an accessibility plugin...</li>
-							<li>Do you want to use a framework that requires its own polyfills? Browsers are Enough</li>
+							<li>Do you want to use a framework that requires its own polyfills? Dealing with browser third parties are enough.</li>
 						</ul>
 					</aside>
 				</section>
@@ -250,8 +250,8 @@
 					<aside class="notes">
 						<!-- Kevin -->
 						<ul>
-							<li>First Problem: Usability Study: Why do all your sites look totally different?</li>
-							<li>Problem that libraries face that we want Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
+							<li>First Problem: Users (and staff) why do all your websites look totally different?</li>
+							<li>This is a problem that many libraries face that we turn to something like Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
 							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is often a rarity]</li>
 						</ul>
 					</aside>
@@ -269,15 +269,15 @@
 					<aside class="notes">
 						<!-- Kevin -->
 						<ul>
-							<li>Second Problem: Many of those websites run on numerous different platform</li>
+							<li>Second Problem: Many of ours websites run on numerous different platform</li>
 							<li>Note the Problem Space: Drupal, Rails apps, in house PHP apps, Libguides, ILLiad… Different stacks. We have all kinds of apps with different markup structure.</li>
-							<li>Some open, some closed, some you can decorate a bit.</li>
+							<li>Some apps are open, some closed, some are vendor products that you can decorate a bit.</li>
 							<li>Open: ILLiad/Wordpress/Rails Applications/In House</li>
 							<li>Vendors with Source Markup/CSS: ILLiad/Ex Libris</li>
 							<li>Vendors who let you decorate: Springshare (libguides), Summon, aka cloud hosts.</li>
 							<li>When we began to seriously evaluate things working with Bootstrap on all these existing systems can require a lot of work/fighting with existing markup.</li>
 							<li>All that fighting, with what benefit.</li>
-							<li>We certainly *could* implement bootstrap or parts of it on all these projects but we would be tightly coupling or work</li>
+							<li>We certainly *could* implement bootstrap or parts of it on all these projects but we would be tightly coupling our work to Bootstrap's prescribed markup and class structure.</li>
 						</ul>
 					</aside>
 				</section>
@@ -308,13 +308,13 @@
 							<li>FTW = For the Web. For the Win.</li>
 							<li>break out into individual modules/pieces for long term maintainability and sanity. Keep it organized! keep it DRY. Avoid duplication</li>
 							<li>Also, let’s you grab what you want, grab what you need, or grab the lot; the choice is yours.</li>
-							<li>Isolation. Debugging. Don’t waste hours of your life trying to find the piece of code you want to override.</li>
+							<li>Isolation. Debugging. Don’t waste hours of your life trying to find the piece of code you want to override. No one wins an important! war.</li>
 							<li>Consistency. Reuse. Time saving.</li>
 							<li>Write code that you can come back to and understand months later - often an afterthought particularly with client side/css code - use CSS stats as a possible example</li>
-							<li>Legacy CSS code is often one heap of overly specific selectors and line after line of side effect coding - same goes for Jquery stew</li>
+							<li>Legacy CSS code is often one heap of overly specific selectors and line after line of side effect coding</li>
 							<li>Lighten your markup/css footprint in the process</li>
 							<li>Feel like you are coding again. It's more engaging and fun!</li>
-							<li>Examples of modular apps libraries use: Project Blacklight. Drupal 8</li>
+							<li>Examples of modular apps libraries use: Rails applications like Hydra/Project Blacklight. Drupal 8</li>
 						</ul>
 					</aside>
 				</section>
@@ -340,7 +340,7 @@
 							<li>Use something that works for you.. any of these tools can help you do that</li>
 							<li>Bower: Project dependency management aka package management</li>
 							<li>What our current base environment looks like: [Level One]Git, Node and npm, Ruby, [Level Two] Bower / Bundler, Grunt / Gulp[are we using this one]?, Livereload, [Level three] Compass, Sass Globbing, other Sass Utitlies</li
-							<li>Given the churn of front-end dev tools in six months we might using libsass and Broccoli. 
+							<li>Given the churn of front-end dev tools in six months we might be using libsass and Broccoli. 
 						</ul>
 						<!-- Kevin -->
 						<ul>
@@ -358,11 +358,12 @@
 					<aside class="notes">
 						<!-- Axa -->
 						<ul>
-							<li>Our approach at a modular front-end is with Sass</li>
+							<li>The core technology behind our approach at a modular front-end is with Sass</li>
 							<li>Modular CSS with Sass (Syntactically Awesome Style Sheets)</li>
 							<li>Compiles to CSS</li>
 							<li>Pre-Processor, abstraction, Less characters = faster development</li>
-							<li>More than just using the Bootstrap sass gem. First, default is not to include everything. You have to choose what to include. Also, this is a more granular approach.</li>
+							<li>Right now we use the ruby sass gem for compliation.</li>
+							<li>Of course Bootstrap has a sass gem already. However our approach is slightly different, less prescriptive, and more granular. First, the default is not to include everything. You have to choose what to include.</li>
 						</ul>
 					</aside>
 				</section>
@@ -423,8 +424,8 @@ byob-sass/
 							<li>Base styles define the default look for HTML and, to some extent, common Drupal elements. These rules will generally be made up of element selectors for HTML elements such as headings, paragraphs and lists. Common Drupal elements, such as basic form items, should be covered as well.</li>
 							<li>Components: This directory should contain full components (modules in SMACSS), their sub-components and modifiers. Components are discrete parts of your page that should sit within the regions of your layouts. You should try to abstract your components as much as possible to promote reuse throughout the theme.</li>
 							<li>The first thing to do while starting to code CSS is to finalize the strategy in modularizing the CSS, for example you can decide if you are going to create separate stylesheets for each basic element of the UI, like typography, forms, iconography, buttons, layout, reset etc. Though it is recommended that you use multiple files for the sake of maintainability, it is always a front end engineers call, depending on the ability to smartly group the rules in a single file. SCSS files can be included within another, the same way as you do for CSS, with the following piece of code “import style”, where style is the SCSS file to be included</li>
-							<li>Sass Globbing gem</li>
-							<li>Naming conventions and file structures: SMACCS[Cite] / BEM[cite]</li>
+							<li>Sass Globbing gem - wildcard inclusion of sass files.</li>
+							<li>Naming conventions and file structures: smacss [Cite] / BEM [cite]</li>
 							<li>Since BEM styles use a single class name as their selector, they have a very low CSS “specificity” value, and tend to get trampled on by global CSS styles that often have multiple levels of nested selectors, as well as tag names and IDs.</li>
 							<li>Tools like compass, grunt/gulp help you manage complexity.</li>
 						</ul>
@@ -457,7 +458,7 @@ body {
 					<aside class="notes">
 						<!-- Axa -->
 						<ul>
-							<li>Variables for maintainability. Fewer deviations. [CSS Deviations? The same thing slight different over and over again? - Is that you you are going for here?] </li>
+							<li>Variables for maintainability. Fewer deviations.</li>
 							<li>This feature can add a lot of value to your code, in terms of maintainability, and in cases where you are required to make app wide changes in a single go. Here is how you declare a variable using SASS: “$primary-color:#ccc;” Here ‘primary-color’ is the variable name and #ccc, is the color value that is stored in it. 
 							<li>You can assign numbers, strings of text, colors, boolean and list of values separated by commas, to a variable.</li>
 							<li>no more hunt and peck</li>
