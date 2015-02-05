@@ -81,7 +81,7 @@
 							<li>Readymade design patterns: Grid system, typography, forms, buttons, navigation, etc.</li>
 							<li>Teams with no designers can get-the-job-done with a more polished look</li>
 							<li>Bootstrap development is FAST. Helps develop in browser. No mockups needed. Test look and feel for usability. Efficient. Agile. Allows for rapid prototyping</li>
-							<li>Tons of libraries use it</li>
+							<li>Tons of libraries use it. Syntax and convention are familiar to most designers and developers.</li>
 						</ul>
 					</aside>
 				</section>
@@ -92,7 +92,8 @@
 						<!-- Axa -->
 						<ul>
 							<li>Remember, it's TWITTER BOOTSTRAP. It's initially designed for twitter, not your projects.</li>
-							<li>Don't be forced to fit your project into a framework. Why use another institution’s framework when you can build your own? </li>
+							<li>Don't be forced to fit your project into a framework. Why use another institution’s framework when you can build your own?</li>
+							<li>It is so prescriptive it can restrict your own work and lock you into a rigid idea of how a page can be structured.</li>
 						</ul>
 					</aside>
 				</section>
@@ -140,6 +141,7 @@
 							<li>Another example of not following best practices is...</li>
 							<li>Excessive use of divs, a condition also known as divitis</li>
 							<li>div class=”row” and div class=”col-sm” are not semantic.</li>
+							<li>Nested Grid layouts can get especially ugly</li>
 							<li>Libraries love semantics. What happened to content over presentation?</li>
 						</ul>
 					</aside>
@@ -151,9 +153,10 @@
 					<aside class="notes">
 						<!-- Axa -->
 						<ul>
+							<li>Paypal Project is clever but....</li>
 							<li>Accessibility is no longer an option. It should be part of your app.</li>
 							<li>Bootsrap is not accessible out of the box. But there is an accessibility plugin...</li>
-							<li>Do you want a framework that requires its own polyfills?</li>
+							<li>Do you want to use a framework that requires its own polyfills? Browsers are Enough</li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +252,7 @@
 						<ul>
 							<li>First Problem: Usability Study: Why do all your sites look totally different?</li>
 							<li>Problem that libraries face that we want Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
-							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is a rarity]</li>
+							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is often a rarity]</li>
 						</ul>
 					</aside>
 				</section>
@@ -266,14 +269,15 @@
 					<aside class="notes">
 						<!-- Kevin -->
 						<ul>
-							<li>Second Problem: Those websites run on numerous different platform</li>
+							<li>Second Problem: Many of those websites run on numerous different platform</li>
 							<li>Note the Problem Space: Drupal, Rails apps, in house PHP apps, Libguides, ILLiad… Different stacks. We have all kinds of apps with different markup structure.</li>
 							<li>Some open, some closed, some you can decorate a bit.</li>
 							<li>Open: ILLiad/Wordpress/Rails Applications/In House</li>
 							<li>Vendors with Source Markup/CSS: ILLiad/Ex Libris</li>
-							<li>Vendors who let you decorate: Springshare, Summon.</li>
-							<li>How do we actually use bootstrap on all these different apps? Working with Bootstrap on existing systems can require a lot of work/fighting with existing markup.</li>
+							<li>Vendors who let you decorate: Springshare (libguides), Summon, aka cloud hosts.</li>
+							<li>When we began to seriously evaluate things working with Bootstrap on all these existing systems can require a lot of work/fighting with existing markup.</li>
 							<li>All that fighting, with what benefit.</li>
+							<li>We certainly *could* implement bootstrap or parts of it on all these projects but we would be tightly coupling or work</li>
 						</ul>
 					</aside>
 				</section>
@@ -284,9 +288,10 @@
 					<aside class="notes">
 						<!-- Kevin -->
 						<ul>
-							<li>Third Problem: University is strongly/mandating that all the aformentioned sites comply with WCAG Guidelines.</li>
-							<li>How are you going to fit bootstrap into that?</li>
+							<li>Third Problem: University is strongly encouraging/soon to be mandating that all the aformentioned sites comply with WCAG Guidelines.</li>
+							<li>Need to put effort rengineering bootstrap to meet guidelines?</li>
 							<li>Bootstrap accessibility plugin is not a possible solution for all those platforms</li>
+							<li>We needed to consider an accessibility solution that could travel with our design.</li>
 						</ul>
 					</aside>
 				</section>
@@ -328,20 +333,21 @@
 
 					<aside class="notes">
 						<!-- Kevin -->
-						insert logo for grunt and bower
 						<ul>
 							<li>Modular components create an development environment that has lots of parts. So we use task runners and package managers to have a manageable workflow.</li>
 							<li>Task automation / build tool / do things faster: Vendor prefixing, Sprite generation, Linting, Image Optimization, Livereload, Concatenation, Minification, Compile Sass, etc. etc. SO MANY PLUGINS!</li>
 							<li>Other build tools: Gulp, Broccoli, Brunch, etc.</li>
 							<li>Use something that works for you.. any of these tools can help you do that</li>
 							<li>Bower: Project dependency management aka package management</li>
-							<li>What our base environment looks like: Git, Node and npm, Ruby, Bower / Bundler, Grunt / Gulp, Sass Globbing</li>
+							<li>What our current base environment looks like: [Level One]Git, Node and npm, Ruby, [Level Two] Bower / Bundler, Grunt / Gulp[are we using this one]?, Livereload, [Level three] Compass, Sass Globbing, other Sass Utitlies</li
+							<li>Given the churn of front-end dev tools in six months we might using libsass and Broccoli. 
 						</ul>
 						<!-- Kevin -->
 						<ul>
-							<li>We took a more granular approach to modularity</li>
-							<li>Essential Bootstrap Features and alternative solutions / tools to allow creative freedom and rapid iteration</li>
-							<li>under this model you can swap in new better tools whenever you want</li>
+							<li>These tools are helping us take a more granular approach to modularity than a highly prescriptive framework like Bootstrap requires.</li>
+							<li>One that puts gives us the "Killer" Bootstrap Features and alternative solutions / tools to allow creative freedom and rapid iteration</li>
+							<li>Under this model you can swap in new better tools whenever you want. Don't like how the grid is managed, get a new one.</li>
+							<li>You fully control your markup and classes (or can tailor your styles to match those you may have)</li>
 						</ul>
 					</aside>
 				</section>
@@ -412,13 +418,13 @@ byob-sass/
 					<aside class="notes">
 						<!-- Axa -->
 						<ul>
-							<li>Copy of our main sass file and what our modular dir structure looks like</li>
+							<li>Copy of our main sass file and what our modular dir structure looks like [inspired by Omega Theme Best Practices?]</li>
 							<li>Abstractions contains Sass mixins, extends and functions for use throughout your stylesheets and help to promote code reuse.</li>
 							<li>Base styles define the default look for HTML and, to some extent, common Drupal elements. These rules will generally be made up of element selectors for HTML elements such as headings, paragraphs and lists. Common Drupal elements, such as basic form items, should be covered as well.</li>
 							<li>Components: This directory should contain full components (modules in SMACSS), their sub-components and modifiers. Components are discrete parts of your page that should sit within the regions of your layouts. You should try to abstract your components as much as possible to promote reuse throughout the theme.</li>
 							<li>The first thing to do while starting to code CSS is to finalize the strategy in modularizing the CSS, for example you can decide if you are going to create separate stylesheets for each basic element of the UI, like typography, forms, iconography, buttons, layout, reset etc. Though it is recommended that you use multiple files for the sake of maintainability, it is always a front end engineers call, depending on the ability to smartly group the rules in a single file. SCSS files can be included within another, the same way as you do for CSS, with the following piece of code “import style”, where style is the SCSS file to be included</li>
 							<li>Sass Globbing gem</li>
-							<li>Naming conventions and file structures: SMACCS / BEM</li>
+							<li>Naming conventions and file structures: SMACCS[Cite] / BEM[cite]</li>
 							<li>Since BEM styles use a single class name as their selector, they have a very low CSS “specificity” value, and tend to get trampled on by global CSS styles that often have multiple levels of nested selectors, as well as tag names and IDs.</li>
 							<li>Tools like compass, grunt/gulp help you manage complexity.</li>
 						</ul>
@@ -451,12 +457,12 @@ body {
 					<aside class="notes">
 						<!-- Axa -->
 						<ul>
-							<li>Variables for maintainability. Fewer deviations.</li>
+							<li>Variables for maintainability. Fewer deviations. [CSS Deviations? The same thing slight different over and over again? - Is that you you are going for here?] </li>
 							<li>This feature can add a lot of value to your code, in terms of maintainability, and in cases where you are required to make app wide changes in a single go. Here is how you declare a variable using SASS: “$primary-color:#ccc;” Here ‘primary-color’ is the variable name and #ccc, is the color value that is stored in it. 
 							<li>You can assign numbers, strings of text, colors, boolean and list of values separated by commas, to a variable.</li>
 							<li>no more hunt and peck</li>
 							 It’s important to identify exactly what needs to be converted to variables, for a maintainable SASS file. One can declare all the color values, images and font-family in variables, put all those variables in a single SCSS file, and include it in the main SCSS file. This will bring much more control over the theming of the UI, where we can quickly change the color values, iconography and other parameters which define the general look and feel of the UI.</li>
-							<li>Minimizing deviations also promotes better browser rendering speed.</li>
+							<li>Minimizing deviations also promotes better browser rendering speed [cite?].</li>
 						</ul>
 					</aside>
 				</section>
@@ -782,6 +788,8 @@ $papa-bear: 72em;
 					<h1>QUESTIONS?</h1>
 					<h3>If we don't have time, TTYL.</h3>
 					<p><small>Repo: <a href="https://github.com/axapu/2015-code4lib-byob">http://git.io/blqR</a> | Slides: <a href="http://git.io/blYZ">http://git.io/blYZ</a></small></p>
+					<p>Drupal Base Repo - Based on Omega theme</p>
+					<p>Barebones demo repo for bourbon/singularity/breakpoint.</p>
 				</section>
 			</div>
 
