@@ -343,13 +343,13 @@ div.scss pre code {
 
 #SPAN_1 {
     box-sizing: border-box;
-    color: rgb(226, 236, 243);
+    color: white;
     display: block;
     float: right;
     height: 56px;
     position: absolute;
-    bottom: 150px;
-    right: 250px;
+    bottom: 100px;
+    right: 150px;
     text-align: center;
     width: 56px;
     z-index: 0;
@@ -357,17 +357,17 @@ div.scss pre code {
     transform: matrix(1, 0, 0, 1, -18, 0);
     transform-origin: 28px 28px;
     background: rgb(255, 108, 10) none repeat scroll 0% 0% / auto padding-box border-box;
-    border: 0px none rgb(226, 236, 243);
+    border: 0px none rgba(232, 119, 34, 1);
     border-radius: 50% 50% 50% 50%;
     font: normal normal bold normal 16px/56px chaparral-pro, Georgia, serif;
     margin: 0px 0px 48px;
-    outline: rgb(226, 236, 243) none 0px;
+    outline: rgba(232, 119, 34, 1) none 0px;
     padding: 0px 2px;
 }/*#SPAN_1*/
 
 #SPAN_1:after {
     background-position: 50% 50%;
-    color: rgb(226, 236, 243);
+    color: rgba(232, 119, 34, 1);
     display: block;
     height: 200px;
     left: 0px;
@@ -385,7 +385,7 @@ div.scss pre code {
     border: 4px solid rgb(255, 108, 10);
     border-radius: 50% 50% 50% 50%;
     font: normal normal bold normal 16px/56px chaparral-pro, Georgia, serif;
-    outline: rgb(226, 236, 243) none 0px;
+    outline: rgba(232, 119, 34, 1) none 0px;
 }/*#SPAN_1:after*/
 
 .talkbubble {
@@ -430,177 +430,6 @@ div.scss pre code {
   border: none;
   resize: none;
 }
-
-#DIV_1 {
-    color: rgb(255, 255, 255);
-    left: 705.59375px;
-    letter-spacing: 0.959999978542328px;
-    position: absolute;
-    text-align: center;
-    top: 200px;
-    width: 288px;
-    z-index: 1;
-    perspective-origin: 144px 144px;
-    transform-origin: 144px 144px;
-    border: 0px none rgb(255, 255, 255);
-    font: normal normal normal normal 24px/38.8320007324219px freight-text-pro, serif;
-    outline: rgb(255, 255, 255) none 0px;
-    padding: 0px 0px 288px;
-}/*#DIV_1*/
-
-#DIV_2 {
-    box-shadow: rgb(136, 136, 136) 0px 0px 12px 0px;
-    color: rgb(255, 255, 255);
-    height: 288px;
-    left: -138.234375px;
-    letter-spacing: 0.959999978542328px;
-    opacity: 0.25;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    width: 288px;
-    z-index: 0;
-    align-self: stretch;
-    perspective-origin: 144px 144px;
-    transform-origin: 144px 144px;
-    background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    border: 0px none rgb(255, 255, 255);
-    border-radius: 50% 50% 50% 50%;
-    font: normal normal normal normal 24px/38.8320007324219px freight-text-pro, serif;
-    outline: rgb(255, 255, 255) none 0px;
-}/*#DIV_2*/
-
-#DIV_3 {
-    box-shadow: rgb(136, 136, 136) 0px 0px 12px 0px;
-    color: rgb(255, 255, 255);
-    height: 288px;
-    left: -152.625px;
-    letter-spacing: 0.959999978542328px;
-    opacity: 0.25;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    width: 288px;
-    z-index: 0;
-    align-self: stretch;
-    perspective-origin: 144px 144px;
-    transform-origin: 144px 144px;
-    background: rgb(0, 0, 255) none repeat scroll 0% 0% / auto padding-box border-box;
-    border: 0px none rgb(255, 255, 255);
-    border-radius: 50% 50% 50% 50%;
-    font: normal normal normal normal 24px/38.8320007324219px freight-text-pro, serif;
-    outline: rgb(255, 255, 255) none 0px;
-}/*#DIV_3*/
-
-#DIV_4 {
-    box-shadow: rgb(136, 136, 136) 0px 0px 12px 0px;
-    color: rgb(255, 255, 255);
-    height: 288px;
-    left: -135.359375px;
-    letter-spacing: 0.959999978542328px;
-    opacity: 0.25;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    width: 288px;
-    z-index: 0;
-    align-self: stretch;
-    perspective-origin: 144px 144px;
-    transform-origin: 144px 144px;
-    background: rgb(0, 255, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    border: 0px none rgb(255, 255, 255);
-    border-radius: 50% 50% 50% 50%;
-    font: normal normal normal normal 24px/38.8320007324219px freight-text-pro, serif;
-    outline: rgb(255, 255, 255) none 0px;
-}/*#DIV_4*/
-
-#DIV_5 {
-    box-shadow: rgb(136, 136, 136) 0px 0px 12px 0px;
-    color: rgb(255, 255, 255);
-    height: 288px;
-    left: -144px;
-    letter-spacing: 0.959999978542328px;
-    position: absolute;
-    text-align: center;
-    top: 0px;
-    width: 288px;
-    align-self: stretch;
-    perspective-origin: 144px 144px;
-    transform-origin: 144px 144px;
-    background: rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    border: 0px none rgb(255, 255, 255);
-    border-radius: 50% 50% 50% 50%;
-    font: normal normal normal normal 24px/38.8320007324219px freight-text-pro, serif;
-    outline: rgb(255, 255, 255) none 0px;
-}/*#DIV_5*/
-
-#HGROUP_1 {
-    color: rgb(231, 229, 227);
-    height: 108px;
-    left: -14.390625px;
-    letter-spacing: 0.959999978542328px;
-    position: relative;
-    text-align: center;
-    top: 100px;
-    width: 1440px;
-    z-index: 1;
-    perspective-origin: 720px 54px;
-    transform-origin: 720px 54px;
-    border: 0px none rgb(231, 229, 227);
-    font: normal normal normal normal 24px/38.8320007324219px freight-text-pro, serif;
-    outline: rgb(231, 229, 227) none 0px;
-}/*#HGROUP_1*/
-
-#H1_2 {
-    color: rgb(231, 229, 227);
-    height: 48px;
-    letter-spacing: 4.80000019073486px;
-    text-align: center;
-    width: 1440px;
-    perspective-origin: 720px 24px;
-    transform-origin: 720px 24px;
-    border: 0px none rgb(231, 229, 227);
-    font: normal normal 200 normal 48px/48px vinyl, sans-serif;
-    margin: 0px;
-    outline: rgb(231, 229, 227) none 0px;
-}/*#H1_2*/
-
-#H2_3 {
-    color: rgb(231, 229, 227);
-    height: 36px;
-    letter-spacing: 2.70000004768372px;
-    text-align: center;
-    width: 1440px;
-    perspective-origin: 720px 18px;
-    transform-origin: 720px 18px;
-    border: 0px none rgb(231, 229, 227);
-    font: italic normal normal normal 36px/36px freight-text-pro, serif;
-    margin: 0px;
-    outline: rgb(231, 229, 227) none 0px;
-}/*#H2_3*/
-
-#H4_4 {
-    color: rgb(231, 229, 227);
-    height: 24px;
-    letter-spacing: 0.959999978542328px;
-    text-align: center;
-    width: 1440px;
-    perspective-origin: 720px 12px;
-    transform-origin: 720px 12px;
-    border: 0px none rgb(231, 229, 227);
-    font: normal normal 200 normal 24px/24px vinyl, sans-serif;
-    margin: 0px;
-    outline: rgb(231, 229, 227) none 0px;
-}/*#H4_4*/
-
-#A_5 {
-    color: rgb(241, 110, 23);
-    letter-spacing: 0.959999978542328px;
-    text-align: center;
-    border: 0px none rgb(241, 110, 23);
-    font: normal normal 200 normal 24px/24px vinyl, sans-serif;
-    outline: rgb(241, 110, 23) none 0px;
-}/*#A_5*/
 
 .container {
   display: inline-block;
@@ -662,3 +491,49 @@ img.logo {
   max-height: 200px;
 }
 
+.snow {
+    /*background-color: #6b92b9;*/
+    background-image: url('../../img/s1.png'), url('../../img/s2.png'), url('../../img/s3.png');
+}
+
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    /*50% { background-color: #b4cfe0 }*/
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        /*background-color: #6b92b9;*/
+    }
+}
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    /*50% { background-color: #b4cfe0 }*/
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        /*background-color: #6b92b9;*/
+    }
+}
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    /*50% { background-color: #b4cfe0 }*/
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        /*background-color: #6b92b9;*/
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    /*50% { background-color: #b4cfe0 }*/
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        /*background-color: #6b92b9;*/
+    }
+}
+
+.snow {
+    /*background-color: #6b92b9;*/
+    background-image: url('../img/s1.png'), url('../../img/s2.png'), url('../../img/s3.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
