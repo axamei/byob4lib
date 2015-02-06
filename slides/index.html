@@ -281,7 +281,7 @@
 						<ul>
 							<li>First Problem: Usability Study: Why do all your sites look totally different?</li>
 							<li>Problem that libraries face that we want Bootstrap to help us solve: consistency! better design! Teams with no designers: gets-the-job-done design that doesn’t suck but is also very, very generic. </li>
-							<li>Possible theme to touch on - Code4lib community should care more about the code they produce on the most visible part of their projects - lots of effort on backend framework and data structures for metadata but well designed/extensible front-end code is often a rarity]</li>
+							<li>Design is also time consuming and a framework like bootstrap prescribes what developers need to do easily.</li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +299,6 @@
 						<!-- Kevin -->
 						<ul>
 							<li>Second Problem: Many of those websites run on numerous different platform</li>
-							<li>Note the Problem Space: Drupal, Rails apps, in house PHP apps, Libguides, ILLiad… Different stacks. We have all kinds of apps with different markup structure.</li>
 							<li>Some open, some closed, some you can decorate a bit.</li>
 							<li>Open: ILLiad/Wordpress/Rails Applications/In House</li>
 							<li>Vendors with Source Markup/CSS: ILLiad/Ex Libris</li>
@@ -307,6 +306,7 @@
 							<li>When we began to seriously evaluate things working with Bootstrap on all these existing systems can require a lot of work/fighting with existing markup.</li>
 							<li>All that fighting, with what benefit.</li>
 							<li>We certainly *could* implement bootstrap or parts of it on all these projects but we would be tightly coupling or work</li>
+							<li>We want to come up with a solution that gives a scalable path to mataining a wide variety of sites.</li>
 						</ul>
 					</aside>
 				</section>
@@ -397,15 +397,16 @@
 					<aside class="notes">
 						<!-- Kevin -->
 						<ul>
-							<li>A long way to go, but our sites are leaner, better designed, and more fun to build than every before.</li>
+							<li>A long way to go, but our sites are leaner, better designed, and more consistent than ever before.</li>
 							<li>
+							<li>We have taken control of our markup and CSS again.</li>
+							<li>They are also a lot more fun to build.</li>
 						</ul>
 					</aside>
 				</section>
 				<section>
 					<p>Modularity, FTW</p>
 					<img src="img/modularity.png" alt="">
-
 					<aside class="notes">
 						<!-- Kevin -->
 						<ul>
@@ -422,7 +423,15 @@
 						</ul>
 					</aside>
 				</section>
-				
+				<section>
+					<p>Modularity, Cont.</p>
+					<img src="img/sass_glasses.svg" alt="">
+					<aside class="notes">
+						<ul>
+							<li>Here for transition</li>
+						</ul>
+					</aside>
+				</section>
 				<section>
 					<!-- <img src="img/git-logo.png" alt="" class="logo"> -->
 					<img src="img/node-logo.png" alt="" class="logo">
@@ -438,16 +447,14 @@
 
 					<aside class="notes">
 						<ul>
-							<li>What our current base environment looks like: [Level One]Git, Node and npm, Ruby, [Level Two] Bower / Bundler, Grunt / Gulp[are we using this one]?, Livereload, [Level three] Compass, Sass Globbing, other Sass Utitlies</li>
-							<li>Modularity = lots of parts. So we use task runners and package managers to have a manageable workflow.</li>
+							<li>What our current toolset looks like: [Level One]Git, Node and npm, Ruby, [Level Two] Bower / Bundler, Grunt / Gulp[are we using this one]?, Livereload, [Level three] Compass, Sass Globbing, other Sass Utitlies</li>
+							<li>(Sass) Modularity = lots of parts. So we use task runners and package managers to have a manageable workflow.</li>
 							<li>Task automation / build tool / do things faster: Vendor prefixing, Sprite generation, Linting, Image Optimization, Livereload, Concatenation, Minification, Compile Sass, etc. etc. SO MANY PLUGINS!</li>
 							<li>Use something that works for you.. any of these tools can help you do that</li>
 							<li>Bower and Bundler: Project dependency management aka package management</li>
 							<li>Given the churn of front-end dev tools in six months we might be using libsass and Broccoli.</li>
 							<li>Under this model you can swap in new better tools whenever you want. Don't like how the grid is managed, get a new one.</li>
-							<li>These tools are helping us take a more granular approach to modularity than a highly prescriptive framework like Bootstrap requires.</li>
-							<li>One that gives us the "Killer" Bootstrap Features and alternative solutions / tools to allow creative freedom and rapid iteration</li>
-							<li>You fully control your markup and classes (or can tailor your styles to match those you may have)</li>
+							<li>These tools gives us the "Killer" Bootstrap Features and alternative solutions / tools to allow creative freedom and rapid iteration</li>
 						</ul>
 					</aside>
 				</section>
@@ -502,13 +509,11 @@
 					<aside class="notes">
 						
 						<ul>
-							<li>Copy of our main sass file and what our modular dir structure looks like. Inspired by Omega Theme Best Practices</li>
+							<li>Copy of our main sass file and what our modular dir structure looks like. Intially inspired by Drupal's Omega Theme.</li>
 							<li>Abstractions contains Sass mixins, extends and functions for use throughout your stylesheets and help to promote code reuse.</li>
 							<li>Base styles define the default look for HTML and, to some extent, common  elements. These rules will generally be made up of element selectors for HTML elements such as headings, paragraphs and lists.</li>
 							<li>Components: This directory should contain full components (modules in SMACSS), their sub-components and modifiers. Components are discrete parts of your page that should sit within the regions of your layouts. You should try to abstract your components as much as possible to promote reuse throughout the theme.</li>
 							<li>Sass Globbing gem</li>
-							<li>Naming conventions and file structures: SMACCS[Cite] / BEM[cite]</li>
-							<li>Since BEM styles use a single class name as their selector, they have a very low CSS “specificity” value, and tend to get trampled on by global CSS styles that often have multiple levels of nested selectors, as well as tag names and IDs.</li>
 						</ul>
 					</aside>
 				</section>
@@ -656,6 +661,7 @@ nav a {
 							<li>Find and chunk out resuable.</li>
 							<li>Mixins are reusable sets of styles which can be used throughout the stylesheet. Correct usage of mixins can reduce the usage of non-semantic stray classes like ‘border-red’, ‘no-padding’ etc.</li>
 							<li>Here, the first section of code, declares a mixin named ‘notification’, which has a set of 3 rules defined inside. In the second section of code, the selector ‘.error’ reuses the mixin, along-with its own rules. ‘@include’ includes the mixin rules within a selector’s rule sets</li>
+							<li>In general our selectors have a very low CSS “specificity” value, and tend to get trampled on by global CSS styles that often have multiple levels of nested selectors, as well as tag names and IDs.</li>
 						</ul>
 					</aside>
 				</section>
@@ -672,7 +678,8 @@ nav a {
 						Sass mixins library<br>
 						Grid + RWD<br>
 						Default styles<br>
-						Components / Modules
+						Components / Modules<br>
+						Different "build" routines for different platforms
 					</div>
 					
 
