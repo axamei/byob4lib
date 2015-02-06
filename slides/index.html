@@ -54,7 +54,7 @@
 						</ul>
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<blockquote>“Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.” <br/><br/>
 					<small>- Bootstrap</small></blockquote>
 
@@ -66,7 +66,7 @@
 							<li>So commonly used that it's been the most starred git repository since Feb 2012 because Bootstrap is awesome</li>
 						</ul>
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<img src="img/doge.png">
 					<span class="doge doge__purple">wow</span>
@@ -86,7 +86,7 @@
 						</ul>
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<p>But, TBH, Bootstrap comes with problems...</p>
 
 					<aside class="notes">
@@ -97,8 +97,8 @@
 							<li>It is prescriptive. it can restrict your own work and lock you into a rigid idea of how a page can be structured.</li>
 						</ul>
 					</aside>
-				</section>
-				<section>
+				</section> -->
+				<!-- <section>
 					<p>Ask @douglascrockford about ;</p>
 					<a href="https://github.com/twbs/bootstrap/issues/3057" data-preview-link><img src="img/semicolon.png"></a>
 
@@ -110,19 +110,22 @@
 							<li>See the github issue thread about use of no semi-colons! https://github.com/twbs/bootstrap/issues/3057</li>
 						</ul>
 					</aside>
-				</section>
+				</section> -->
 				<section>
-					Bootstrap &lt;div&gt;itis and unsemantic markup
-					<pre class="language-markup"><code class="language-markup">
+					<p>But, TBH, Bootstrap comes with problems...</p>
+					<div class="scss" style="font-size:0.7em;">
+						<pre class="language-markup"><code class="language-markup">
 &lt;div class=&quot;panel-display clearfix&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12 col-xs-12&quot;&gt;
             &lt;div class=&quot;panel-pane pane-node&quot;&gt;
                 &lt;div class=&quot;pane-content&quot;&gt;
                     &lt;div class=&quot;media&quot;&gt;
-                        &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;&lt;img class=&quot;media-object&quot;&gt;&lt;/a&gt;
+                        &lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+                        	&lt;img class=&quot;media-object&quot;&gt;
+                        &lt;/a&gt;
                         &lt;div class=&quot;media-body&quot;&gt;
-                            &lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt; 
+                            &lt;h4 class=&quot;media-heading&quot;&gt;Media&lt;/h4&gt; 
                             ...
                             &lt;div class=&quot;media&quot;&gt;
                                 ...
@@ -134,8 +137,26 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</html>
 </code></pre>
+					</div>
+					<div class="css" style="font-size:0.7em;">
+						<pre class="language-markup"><code class="language-markup">
+&lt;main role=&quot;main&quot; class=&quot;panel&quot;&gt;
+	&lt;section class=&quot;panel--pane&quot;&gt;
+		&lt;h1&gt;Heading&lt;/h1&gt;
+		&lt;div class=&quot;media&quot;&gt;
+			&lt;a href=&quot;/&quot;&gt;
+				&lt;img src=&quot;.png&quot; alt=&quot;desc&quot; class=&quot;media--object&quot;&gt;
+			&lt;/a&gt;
+			&lt;div class=&quot;media--body&quot;&gt;
+				&lt;h4&gt;Media Heading&lt;/h4&gt;
+				&lt;p&gt;Body&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+&lt;/main&gt;							
+						</code></pre>
+					</div>
 
 					<aside class="notes">
 						
@@ -181,12 +202,12 @@
 						</ul>
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 					<img src="img/snowflake.png" alt="" style="max-height:500px;">
 					<aside class="notes">
 						special snowflakes
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<div class="container">
 					  <div class="Browser">
@@ -289,12 +310,11 @@
 						</ul>
 					</aside>
 				</section>
-				<section>
+				<!-- <section>
 				<blockquote>"The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect."<br/><br/>
 				<small>- Tim Berners-Lee</small></blockquote>
 
 					<aside class="notes">
-						<!-- Kevin -->
 						<ul>
 							<li>Third Problem: University is strongly encouraging/soon to be mandating that all the aformentioned sites comply with WCAG Guidelines.</li>
 							<li>Need to put effort rengineering bootstrap to meet guidelines?</li>
@@ -302,9 +322,85 @@
 							<li>We needed to consider an accessibility solution that could travel with our design.</li>
 						</ul>
 					</aside>
-				</section>
+				</section> -->
 				<section>
 					<h1>We need HTML and CSS to be <span class="highlight-orange">decoupled</span></h1>
+				</section>
+				<section>
+					<div class="container">
+					  <div class="Browser">
+					    <div class="Browser--chrome">
+					      <div class="Browser--chrome--controls1"></div>
+					      <div class="Browser--chrome--controls2"></div>
+					      <div class="Browser--chrome--controls3"></div>
+					    </div>
+					    <div class="Browser--content"><img src="img/ill_new.png"/></div>
+					  </div>
+					</div>
+
+					<div class="container">
+					  <div class="Browser">
+					    <div class="Browser--chrome">
+					      <div class="Browser--chrome--controls1"></div>
+					      <div class="Browser--chrome--controls2"></div>
+					      <div class="Browser--chrome--controls3"></div>
+					    </div>
+					    <div class="Browser--content"><img src="img/homepage_new.png"/></div>
+					  </div>
+					</div>
+
+					<div class="container">
+					  <div class="Browser">
+					    <div class="Browser--chrome">
+					      <div class="Browser--chrome--controls1"></div>
+					      <div class="Browser--chrome--controls2"></div>
+					      <div class="Browser--chrome--controls3"></div>
+					    </div>
+					    <div class="Browser--content"><img src="img/lae_home.png"/></div>
+					  </div>
+					</div>
+					<h1>Progress</h1>
+
+					<div class="container">
+					  <div class="Browser">
+					    <div class="Browser--chrome">
+					      <div class="Browser--chrome--controls1"></div>
+					      <div class="Browser--chrome--controls2"></div>
+					      <div class="Browser--chrome--controls3"></div>
+					    </div>
+					    <div class="Browser--content"><img src="img/rbsc_new.png"/></div>
+					  </div>
+					</div>
+
+					<div class="container">
+					  <div class="Browser">
+					    <div class="Browser--chrome">
+					      <div class="Browser--chrome--controls1"></div>
+					      <div class="Browser--chrome--controls2"></div>
+					      <div class="Browser--chrome--controls3"></div>
+					    </div>
+					    <div class="Browser--content"><img src="img/libguides_new.png"/></div>
+					  </div>
+					</div>
+
+					<div class="container">
+					  <div class="Browser">
+					    <div class="Browser--chrome">
+					      <div class="Browser--chrome--controls1"></div>
+					      <div class="Browser--chrome--controls2"></div>
+					      <div class="Browser--chrome--controls3"></div>
+					    </div>
+					    <div class="Browser--content"><img src="img/versailles_home.png"/></div>
+					  </div>
+					</div>
+
+					<aside class="notes">
+						<!-- Kevin -->
+						<ul>
+							<li>A long way to go, but our sites are leaner, better designed, and more fun to build than every before.</li>
+							<li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<p>Modularity, FTW</p>
@@ -326,13 +422,14 @@
 						</ul>
 					</aside>
 				</section>
+				
 				<section>
-					<img src="img/git-logo.png" alt="" class="logo">
+					<!-- <img src="img/git-logo.png" alt="" class="logo"> -->
 					<img src="img/node-logo.png" alt="" class="logo">
 					<img src="img/npm-logo.svg" alt="" class="logo">
-					<img src="img/ruby-logo.png" alt="" class="logo">
+					<img src="img/ruby-logo.png" alt="" class="logo"><br>
 					<img src="img/grunt-logo.svg" alt="" class="logo">
-					<img src="img/gulp-logo.png" alt="" class="logo">
+					<!-- <img src="img/gulp-logo.png" alt="" class="logo"> -->
 					<img src="img/bower-logo.png" alt="" class="logo">
 					<img src="img/bundler-logo.png" alt="" class="logo"><br>
 					<img src="img/bourbon-logo.png" alt="" class="logo">
@@ -340,7 +437,6 @@
 					<img src="img/singularity-logo.png" alt="" class="logo">
 
 					<aside class="notes">
-						<!-- Kevin -->
 						<ul>
 							<li>What our current base environment looks like: [Level One]Git, Node and npm, Ruby, [Level Two] Bower / Bundler, Grunt / Gulp[are we using this one]?, Livereload, [Level three] Compass, Sass Globbing, other Sass Utitlies</li>
 							<li>Modularity = lots of parts. So we use task runners and package managers to have a manageable workflow.</li>
@@ -356,23 +452,9 @@
 					</aside>
 				</section>
 				<section>
-					<h2 style="text-transform:uppercase;">I pitty the fool<br> <span style="text-transform:lowercase;font-size:1.2em;">who doesn't get <img src="img/sass-logo.png" style="display:inline-block; vertical-align:top;height:70px;">y!</span></h2>
-					<img src="img/get-sassy.gif">
-
-					<aside class="notes">
-						
-						<ul>
-							<li>Sass shop. Forefront of what's making this doable. Compiled language. We use Scss and not Sass files. </li>
-							<li>Compiled CSS with Sass (Syntactically Awesome Style Sheets)</li>
-							<li>CSS Pre-Processor, abstraction, Less characters = faster development</li>
-							<li>More than just using the Bootstrap sass gem. First, default is not to include everything. You have to choose what to include. Also, this is a more granular approach.</li>
-						</ul>
-					</aside>
-				</section>
-				<section>
 					<p>Modular Components / Partials</p>
 					<div class="scss">
-						<p>Manifest</p>
+						<p>main.scss</p>
 						<pre class="language-scss"><code class="language-scss">
 // Import external libraries.
 @import "compass";
@@ -430,7 +512,8 @@
 						</ul>
 					</aside>
 				</section>
-				<section>
+				
+				<!-- <section>
 					<p>Preventing Deviations</p>
 					<div class="scss">
 						<p>SCSS:</p>
@@ -466,8 +549,8 @@ body {
 							<li>No one wins in an !important war</li>
 						</ul>
 					</aside>
-				</section>
-				<section>
+				</section> -->
+				<!-- <section>
 					<p>Selector Inheritance</p>
 					<div class="scss">
 						<p>SCSS:</p>
@@ -519,22 +602,29 @@ nav a {
 							<li>Warning: inception rule / don’t go more than 4 levels deep coz it gets messy. and too specific.</li>
 						</ul>
 					</aside>
-				</section>
+				</section> -->
+				
 				<section>
 					<p>Reusable Code</p>
 					<div class="scss">
 						<p>SCSS:</p> 
 						<pre class="language-scss"><code class="language-scss">
 @mixin notification {
-	padding:10px;
-	border-radius:5px;
-	font-size:1em; 
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1em; 
 }
 
 .error {
 	@include notification;
-	background:red;
-	color:white; 
+	background: red;
+	color: white; 
+}
+
+.success {
+	@include notification;
+	background: green;
+	color: darkgreen;
 }						
 						</code></pre>
 					</div>
@@ -542,11 +632,19 @@ nav a {
 						<p>CSS:</p>
 						<pre class="language-css"><code class="language-css">
 .error {
-	padding:10px;
-	border-radius:5px;
-	font-size:1em;
-	background:red;
-	color:white; 
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1em;
+	background: red;
+	color: white; 
+}
+
+.success {
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1em;
+	background: green;
+	color: darkgreen; 
 }							
 						</code></pre>
 					</div>
@@ -561,12 +659,22 @@ nav a {
 						</ul>
 					</aside>
 				</section>
+
 				<section>
-					<p>UI Kit</p>
-					<img src="img/bourbon-logo.png" alt=""><br>
+					<p>BYO Bootstrap AKA Tigerstyle</p>
+					<div class="scss">
+						<img src="img/bourbon-logo.png" alt=""><br>
 					<img src="img/neat-logo.svg" alt="" style="width:300px;"><br>
 					<img src="img/bitters-logo.svg" alt=""><br>
-					<img src="img/refills-logo.svg" alt="">
+					<img src="img/refills-logo.svg" alt=""> 
+					</div>
+					<div class="css" style="line-height: 2.7em;">
+						Sass mixins library<br>
+						Grid + RWD<br>
+						Default styles<br>
+						Components / Modules
+					</div>
+					
 
 					<aside class="notes">
 						<ul>
@@ -576,6 +684,11 @@ nav a {
 							<li>For existing systems, less massaging of existing markup to carry out what you want. 
 						</ul>
 					</aside>
+				</section>
+				<section>
+					<p>Patterns, Components &amp; Type Styles, Oh My!</p>
+					<video data-autoplay src="img/refills-patterns.mp4" style="width:49%;display:inline;float:left"></video>
+					<video data-autoplay src="img/refills-components.mp4" style="width:49%;display:inline"></video>
 				</section>
 				<section>
 					<p>Singularity</p>
@@ -660,7 +773,7 @@ $papa-bear: 72em;
 }							
 						</code></pre>
 						
-						<span id="SPAN_1">Whoa.</span>
+						<span class="fragment" id="SPAN_1">Whoa.</span>
 
 					<aside class="notes">
 						<ul>
@@ -676,85 +789,8 @@ $papa-bear: 72em;
 					<video data-autoplay src="img/responsive-context.mp4"></video>
 				</section>
 				<section>
-					<div class="container">
-					  <div class="Browser">
-					    <div class="Browser--chrome">
-					      <div class="Browser--chrome--controls1"></div>
-					      <div class="Browser--chrome--controls2"></div>
-					      <div class="Browser--chrome--controls3"></div>
-					    </div>
-					    <div class="Browser--content"><img src="img/ill_new.png"/></div>
-					  </div>
-					</div>
-
-					<div class="container">
-					  <div class="Browser">
-					    <div class="Browser--chrome">
-					      <div class="Browser--chrome--controls1"></div>
-					      <div class="Browser--chrome--controls2"></div>
-					      <div class="Browser--chrome--controls3"></div>
-					    </div>
-					    <div class="Browser--content"><img src="img/homepage_new.png"/></div>
-					  </div>
-					</div>
-
-					<div class="container">
-					  <div class="Browser">
-					    <div class="Browser--chrome">
-					      <div class="Browser--chrome--controls1"></div>
-					      <div class="Browser--chrome--controls2"></div>
-					      <div class="Browser--chrome--controls3"></div>
-					    </div>
-					    <div class="Browser--content"><img src="img/lae_home.png"/></div>
-					  </div>
-					</div>
-					<h1 class="rainbow">Progress</h1>
-
-					<div class="container">
-					  <div class="Browser">
-					    <div class="Browser--chrome">
-					      <div class="Browser--chrome--controls1"></div>
-					      <div class="Browser--chrome--controls2"></div>
-					      <div class="Browser--chrome--controls3"></div>
-					    </div>
-					    <div class="Browser--content"><img src="img/rbsc_new.png"/></div>
-					  </div>
-					</div>
-
-					<div class="container">
-					  <div class="Browser">
-					    <div class="Browser--chrome">
-					      <div class="Browser--chrome--controls1"></div>
-					      <div class="Browser--chrome--controls2"></div>
-					      <div class="Browser--chrome--controls3"></div>
-					    </div>
-					    <div class="Browser--content"><img src="img/libguides_new.png"/></div>
-					  </div>
-					</div>
-
-					<div class="container">
-					  <div class="Browser">
-					    <div class="Browser--chrome">
-					      <div class="Browser--chrome--controls1"></div>
-					      <div class="Browser--chrome--controls2"></div>
-					      <div class="Browser--chrome--controls3"></div>
-					    </div>
-					    <div class="Browser--content"><img src="img/versailles_home.png"/></div>
-					  </div>
-					</div>
-
-					<aside class="notes">
-						<!-- Kevin -->
-						<ul>
-							<li>A long way to go, but our sites are leaner, better designed, and more fun to build than every before.</li>
-							<li>
-						</ul>
-					</aside>
-				</section>
-				<section>
-					<!-- Kevin -->
 					<p>CSS Stats</p>
-					<a href="http://cssstats.com" data-preview-link><img src="img/css-stats.png" alt="" style="height: 400px;"></a>
+					<video data-autoplay src="img/cssstats.mp4"></video>
 					<aside class="notes">
 						<ul>
 							<li>Reduce; Reuse; Refactor</li>
@@ -762,6 +798,7 @@ $papa-bear: 72em;
 						</ul>
 					</aside>
 				</section>
+				
 				<section>
 					<img src="img/doge.png">
 					<span class="doge doge__purple">wow</span>
@@ -781,6 +818,7 @@ $papa-bear: 72em;
 						</ul>
 					</aside>
 				</section>
+				
 				<section>
 					<h1>QUESTIONS?</h1>
 					<h3>If we don't have time, TTYL.</h3>
@@ -788,6 +826,20 @@ $papa-bear: 72em;
 					<aside class="notes">
 						<p>Drupal Base Repo - Based on Omega theme</p>
 						<p>Barebones demo repo for bourbon/singularity/breakpoint.</p>
+					</aside>
+				</section>
+				<section>
+					<h2 style="text-transform:uppercase;">I pitty the fool<br> <span style="text-transform:lowercase;font-size:1.2em;">who doesn't get <img src="img/sass-logo.png" style="display:inline-block; vertical-align:top;height:70px;">y!</span></h2>
+					<img src="img/get-sassy.gif">
+
+					<aside class="notes">
+						
+						<ul>
+							<li>Sass shop. Forefront of what's making this doable. Compiled language. We use Scss and not Sass files. </li>
+							<li>Compiled CSS with Sass (Syntactically Awesome Style Sheets)</li>
+							<li>CSS Pre-Processor, abstraction, Less characters = faster development</li>
+							<li>More than just using the Bootstrap sass gem. First, default is not to include everything. You have to choose what to include. Also, this is a more granular approach.</li>
+						</ul>
 					</aside>
 				</section>
 			</div>
