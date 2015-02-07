@@ -42,11 +42,6 @@ CodePen - [http://codepen.io/](http://codepen.io/)
 
 SassMeister - [http://sassmeister.com/](http://sassmeister.com/)
 
-##GUI Sass compilers:
-CodeKit - [https://incident57.com/codekit/](https://incident57.com/codekit/)
-
-Compass.app - [http://compass.kkbox.com/](http://compass.kkbox.com/)
-
 ###Grid Systems:
 Flint - [http://flint.gs/](http://flint.gs/)
 
@@ -62,6 +57,8 @@ Susy - [http://susy.oddbird.net/](http://susy.oddbird.net/)
 Compass - http://compass-style.org/
 
 Bourbon - http://bourbon.io 
+
+Neat - http://neat.bourbon.io/
 
 Bitters - http://bitters.bourbon.io
 
