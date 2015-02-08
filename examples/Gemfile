@@ -1,0 +1,11 @@
+# A BYOB Gemfile
+source "https://rubygems.org"
+
+# dependencies
+gem "sass", "~>3.4"
+gem "compass", "~>1.0"
+
+# Bootstrap replacement
+gem "bourbon", "~>4.2"
+gem "breakpoint", "~>2.5.0"
+gem "singularitygs", "~>1.5"

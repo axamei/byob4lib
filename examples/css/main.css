@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.main {
+  font-family: sans-serif;
+  font-size: 10em;
+  font-weight: bold;
+  color: white;
+  background: red;
+  -sgs-span-settings: ("span": 3, "location": 1, "grid": 0.25 8 0.25, "gutter": 0.25, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+@media (min-width: 46em) {
+  .main {
+    -sgs-span-settings: ("span": 1, "location": 2, "grid": 2 3, "gutter": 0.16667, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 58.06452%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 72em) {
+  .main {
+    -sgs-span-settings: ("span": 1, "location": 2, "grid": 1 4 1, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 60.0%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 20%;
+    clear: none;
+  }
+}
+
+.first {
+  font-family: sans-serif;
+  font-size: 10em;
+  font-weight: bold;
+  color: white;
+  background: blue;
+  -sgs-span-settings: ("span": 1, "location": 2, "grid": 0.25 8 0.25, "gutter": 0.25, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 88.88889%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 5.55556%;
+  clear: none;
+  clear: both;
+}
+@media (min-width: 46em) {
+  .first {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 2 3, "gutter": 0.16667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 38.70968%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 72em) {
+  .first {
+    -sgs-span-settings: ("span": 1, "location": 3, "grid": 1 4 1, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 15%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+.second {
+  font-family: sans-serif;
+  font-size: 10em;
+  font-weight: bold;
+  color: white;
+  background: blue;
+  -sgs-span-settings: ("span": 1, "location": 2, "grid": 0.25 8 0.25, "gutter": 0.25, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+  width: 88.88889%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 5.55556%;
+  clear: none;
+  clear: both;
+}
+@media (min-width: 46em) {
+  .second {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 2 3, "gutter": 0.16667, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 38.70968%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: left;
+  }
+}
+@media (min-width: 72em) {
+  .second {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 1 4 1, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": null, "gutter property": "margin", "options": (null: null));
+    width: 15%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+
+body {
+  background-image: linear-gradient(to right, #ffcc99 0%, #ffcc99 2.77778%, #ffd8b2 2.77778%, #ffd8b2 5.55556%, #ffcc99 5.55556%, #ffcc99 94.44444%, #ffd8b2 94.44444%, #ffd8b2 97.22222%, #ffcc99 97.22222%, #ffcc99);
+}
+@media (min-width: 736px) {
+  body {
+    background-image: linear-gradient(to right, #ffcc99 0%, #ffcc99 38.70968%, #ffd8b2 38.70968%, #ffd8b2 41.93548%, #ffcc99 41.93548%, #ffcc99);
+  }
+}
+@media (min-width: 1152px) {
+  body {
+    background-image: linear-gradient(to right, #ffcc99 0%, #ffcc99 15%, #ffd8b2 15%, #ffd8b2 20%, #ffcc99 20%, #ffcc99 80.0%, #ffd8b2 80.0%, #ffd8b2 85.0%, #ffcc99 85.0%, #ffcc99);
+  }
+}
