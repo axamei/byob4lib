@@ -79,8 +79,7 @@
 					<p>But, TBH, Bootstrap comes with problems...</p>
 					<div class="scss" style="font-size:0.7em;">
 						<p>Boostrap:</p>
-						<pre class="language-markup"><code class="language-markup">
-&lt;div class=&quot;panel-display clearfix&quot;&gt;
+						<pre class="language-markup"><code class="language-markup">&lt;div class=&quot;panel-display clearfix&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-lg-6 col-md-6 col-sm-12 col-xs-12&quot;&gt;
             &lt;div class=&quot;panel-pane pane-node&quot;&gt;
@@ -106,8 +105,7 @@
 					</div>
 					<div class="css" style="font-size:0.7em;">
 						<p>BYOB:</p>
-						<pre class="language-markup"><code class="language-markup">
-&lt;main role=&quot;main&quot; class=&quot;panel&quot;&gt;
+						<pre class="language-markup"><code class="language-markup">&lt;main role=&quot;main&quot; class=&quot;panel&quot;&gt;
 	&lt;section class=&quot;panel--pane&quot;&gt;
 		&lt;h1&gt;Heading&lt;/h1&gt;
 		&lt;div class=&quot;media&quot;&gt;
@@ -168,7 +166,7 @@
 					</aside>
 				</section>
 				
-				<section>
+				<section class="snow">
 					<div class="container">
 					  <div class="Browser">
 					    <div class="Browser--chrome">
@@ -201,7 +199,7 @@
 					    <div class="Browser--content"><img src="img/illiad_legacy.png"/></div>
 					  </div>
 					</div>
-					<h1 class="rainbow">Wall of Shame</h1>
+					<h1 class="rainbow" style="font-size:2.0em;">Special Snowflakes</h1>
 
 					<div class="container">
 					  <div class="Browser">
@@ -397,8 +395,7 @@
 					<p style="margin-bottom:0;">Modular Components / Partials</p>
 					<div class="scss">
 						<p>main.scss (Manifest):</p>
-						<pre class="language-scss"><code class="language-scss">
-// Import external libraries.
+						<pre class="language-scss"><code class="language-scss">// Import external libraries.
 @import "compass";
 @import "breakpoint";
 @import "singularitygs";
@@ -481,8 +478,7 @@ $success-color: #e6efc2;
 					</div>
 					<div class="css">
 						<p>CSS:</p>
-						<pre class="language-css"><code class="language-css">
-.notification__error {
+						<pre class="language-css"><code class="language-css">.notification__error {
   background-color: #fbe3e4;
   color: #96151b;
   display: block;
@@ -596,8 +592,7 @@ $success-color: #e6efc2;
 				<section>
 					<p>Singularity</p>
 					<div class="scss">
-					<pre class="language-scss"><code class="language-scss">
-@include add-grid(1 4 1);
+					<pre class="language-scss"><code class="language-scss">@include add-grid(1 4 1);
 @include add-gutter(1/6);
 
 .main {
@@ -632,8 +627,7 @@ $success-color: #e6efc2;
 					<p>Breakpoint</p>
 					<div class="scss">
 						<p>SCSS:</p>
-						<pre class="language-scss"><code class="language-scss">
-// Breakpoints
+						<pre class="language-scss"><code class="language-scss">// Breakpoints
 $medium: 46em;
 $large: 72em;
 
@@ -645,8 +639,7 @@ $large: 72em;
 					</div>
 					<div class="css">
 						<p>CSS:</p>
-						<pre class="language-scss"><code class="language-scss">
-@media (min-width: 46em) {
+						<pre class="language-scss"><code class="language-scss">@media (min-width: 46em) {
   .main {
     content: 'Keanu approved';
   }
