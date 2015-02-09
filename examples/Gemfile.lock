@@ -1,6 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bitters (1.0.0)
+      bourbon (>= 3.2)
+      sass (>= 3.2)
+      thor
     bourbon (4.2.0)
       sass (~> 3.4)
       thor
@@ -25,6 +29,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
+    refills (0.1.0)
     sass (3.4.11)
     sassy-maps (0.4.0)
       sass (~> 3.3)
@@ -37,8 +42,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bitters
   bourbon (~> 4.2)
   breakpoint (~> 2.5.0)
   compass (~> 1.0)
+  refills
   sass (~> 3.4)
   singularitygs (~> 1.5)
