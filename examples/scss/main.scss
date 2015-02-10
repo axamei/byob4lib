@@ -1,9 +1,15 @@
 // Main SCSS file
 
+// third party
 @import "compass/reset";
 @import "breakpoint";
 @import "singularitygs";
+@import "vendor/bourbon/bourbon";
+@import "vendor/base/base";
 
+// your own sassy self
 @import "abstractions/mixins";
 @import "base/grid";
 @import "base/layout";
+@import "components/hero-unit";
+@import "components/menu--main";
