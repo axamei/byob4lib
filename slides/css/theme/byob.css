@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+/*@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
 @import url(http://fonts.googleapis.com/css?family=Muli:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Nunito:400,700);
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,700);*/
 /**
  * BYOB theme for reveal.js.
  *
@@ -215,16 +215,16 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: rgba(232, 119, 34, 1); }
+  border-right-color: rgba(232, 119, 34, 0); }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: rgba(232, 119, 34, 1); }
+  border-left-color: rgba(232, 119, 34, 0); }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: rgba(232, 119, 34, 1); }
+  border-bottom-color: rgba(232, 119, 34, 0); }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: rgba(232, 119, 34, 1); }
+  border-top-color: rgba(232, 119, 34, 0); }
 
 .reveal .controls div.navigate-left.enabled:hover {
   border-right-color: #71ebf4; }
