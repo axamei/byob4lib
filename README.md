@@ -26,7 +26,7 @@ tools we will discuss are Grunt, Bower, and Sass tools like Singularity,
 Breakpoint, and Bourbon.
 
 
-Available via http://axapu.github.io/2015-code4lib-byob/slides/#/
+Available via http://axapu.github.io/byob4lib/slides/
 
 ## Resources
 
@@ -103,11 +103,13 @@ Libsass - http://libsass.org/ (no more ruby dependency)
 Why LibSass? http://sass-lang.com/libsass  
 
 
-
-
 ###Haters gonna hate:
 http://snugug.github.io/winning-the-web/ 
 
 http://notes.gross.is/post/43508972396/please-stop-using-twitter-bootstrap 
 
 http://fourword.fourkitchens.com/article/you-dont-need-bootstrap 
+
+##Sources for presentation
+
+

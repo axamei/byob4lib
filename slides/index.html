@@ -126,7 +126,7 @@
 						
 						<ul>
 							<li>On the left is a condition known as divitis. Prone to happen in Bootstrap. Excessive use of nested divs.</li>
-							<li>div class=”col-md-6” is not semantic. Instead of using all those col-spans, use selectors that convey the context of your content.</li>
+							<li>Due to use of presentation markup like div class=”col-md-6”. Instead of using all those col-spans, use selectors that convey the context of your content.</li>
 							<li>On the right BYOB version. Less presentational markup and css classes. Less nested divs. Contextual, semantic sections. Less messy. More maintainable.</li>
 						</ul>
 					</aside>
@@ -138,8 +138,7 @@
 					<aside class="notes">
 						
 						<ul>
-							<li>Bootsrap is not accessible out of the box. But there is an accessibility plugin...</li>
-							<li>Paypal Project is clever but....</li>
+							<li>Bootsrap is not accessible out of the box. But there is an accessibility plugin... developed by Paypal. It's clever but...</li>
 							<li>Accessibility is no longer an option. WCAG compliance should be part of your development routine.</li>
 							<li>Do you want to use a framework that requires its own polyfills?</li>
 						</ul>
@@ -158,15 +157,14 @@
 							<li>Great for web development, horrible for web designers... It's the times new roman of the web. All sites basically look the same. Too prescriptive. The canvas is not blank.</li>
 							<li>Bootstrap is a development solution. Not a design one.</li>
 							<li>Designers want more flexibility and creative freedom</li>
-							<li>Coupling of HTML and CSS  leads to col- and div- sanity and lack of creative freedom</li>
+							<li>Coupling of HTML and CSS leads to col- and div- sanity and lack of creative freedom</li>
 							<li>Yes, it's somewhat customizable, but why bother?</li>
-							<li>If you are already investing heavily in customizing bootstrap, you might want to just make pull your own together.</li>
-							<li>Put your coding and design skills to better use.</li> 
+							<li>If you are already investing heavily in customizing bootstrap, you might want to just build your own. Put your coding and design skills to better use.</li> 
 						</ul>
 					</aside>
 				</section>
 				
-				<section class="snow">
+				<section>
 					<div class="container">
 					  <div class="Browser">
 					    <div class="Browser--chrome">
@@ -199,7 +197,7 @@
 					    <div class="Browser--content"><img src="img/illiad_legacy.png"/></div>
 					  </div>
 					</div>
-					<h1 class="rainbow" style="font-size:2.0em;">Let's talk about Snowflakes</h1>
+					<h1 class="rainbow" style="font-size:2.4em;">Let's talk about Snowflakes</h1>
 
 					<div class="container">
 					  <div class="Browser">
@@ -336,7 +334,6 @@
 					<aside class="notes">
 						<ul>
 							<li>A long way to go, but our sites are leaner, better designed, and more consistent than ever before.</li>
-							<li>
 							<li>We have taken control of our markup and CSS again.</li>
 							<li>They are also a lot more fun to build.</li>
 							<li>How did we start ourselves on this improving path?</li>
@@ -355,10 +352,10 @@
 
 					<aside class="notes">
 						<ul>
-							<li>FTW = For the Web. For the Win.</li>
+							<li>Modularity, FTW = For the Web. For the Win.</li>
 							<li>break out into individual modules/pieces </li>
-							<li>We're doing it with Sass. PROGRAMMATIC approach to CSS.</li>
-							<li>for long term MAINTAINABILITY and SANITY. Keep it organized! keep it DRY. Avoid duplication</li>
+							<li>We're doing it with Sass. PROGRAMMATIC approach to CSS. Actually, Sassy CSS. </li>
+							<li>Goal: long term MAINTAINABILITY and SANITY. Keep it organized! keep it DRY. Avoid duplication</li>
 							<li>Moving towards CONSISTENCY. REUSE in codebase</li>
 							<li>ISOLATION. DEBUGGING. Don’t waste hours of your life trying to find the piece of code in your 3000+ line css file you want to override.</li>
 						</ul>
@@ -417,9 +414,9 @@
 						<ul>
 							<li>main scss file and what our modular dir structure looks like. Intially inspired by Drupal's Omega 4 Theme.</li>
 							<li>Abstractions contains Sass mixins, extends and functions for use throughout your stylesheets and help to promote code REUSE.</li>
-							<li>Base styles define the default look for HTML and, to some extent, common  elements. e.g. headings</li>
+							<li>Base styles define the default look for common elements. e.g. headings</li>
 							<li>Components: Components are discrete parts / blocks of your page that should sit within the regions of your layouts. You should try to abstract your components as much as possible to promote reuse throughout the theme.</li>
-							<li>Also, let’s you grab what you want, grab what you need, or grab the lot; the choice is yours.</li>
+							<li>This approach let’s you grab what you want, grab what you need, or grab the lot; the choice is yours.</li>
 							<li>We have different build routines for illiad and libguides (libguides pictured)</li>
 						</ul>
 					</aside>
@@ -479,14 +476,14 @@ $success-color: #e6efc2;
 							<li>Find and chunk out resuable.</li>
 							<li>Variable for colors. error, success.</li>
 							<li>Mixin for notifications. Set rules.</li>
-							<li>include mixin for .notification__error selector so rules declared in notification mixin are included in that selector. Parentheses takes color variable. </li>
+							<li>include mixin for .notification__error selector so rules declared in notification mixin are included in that selector. pass color variable and magic.</li>
 							<li>Semantic. Fewer deviations.</li>
 						</ul>
 					</aside>
 				</section>
 
 				<section>
-					<p>BYO Bootstrap AKA Tigerstyle</p>
+					<p>Build Your Own Bootstrap</p>
 					<div class="scss">
 						<img src="img/bourbon-logo.png" alt=""><br>
 					<img src="img/neat-logo.svg" alt="" style="width:300px;"><br>
@@ -509,7 +506,7 @@ $success-color: #e6efc2;
 							<li>Bourbon - Sass mixins library. e.g. border radius, animation, etc.</li>
 							<li>Neat - Grid + RWD. We use Singularity and Breakpoint. Benefit of modularity. Swap tools you want to use</li>
 							<li>Bitters - Default styling. e.g. Headings, Typography, form components</li>
-							<li>Refills - Component / Modules</li>
+							<li>Refills - Pattersn / Components / Modules</li>
 						</ul>
 					</aside>
 				</section>
@@ -561,8 +558,8 @@ $success-color: #e6efc2;
 					<aside class="notes">
 						<ul>
 							<li>gem, require, import</li>
-							<li>Ratio based, Semantic Grid System. This means that instead of grid classes being generated that you apply to your HTML, the grid is stored entirely within your CSS and applied directly to the element you want to use it on.</li>
-							<li>It’s easy and you can make your own! Define grid, gutter and gutter style</li>
+							<li>Ratio based Grid System.</li>
+							<li>Establish grids easily</li>
 						</ul>
 					</aside>
 				</section>
@@ -591,8 +588,8 @@ $success-color: #e6efc2;
 					<aside class="notes">
 						<ul>
 							<li>Establish grid and gutter</li>
-							<li>Set the grid span in a semantic selector e.g. main for main content</li>
-							<li>Grids should work with the content itself, not impose a class structure.</li>
+							<li>Set the grid span in a selector e.g. main for main content</li>
+							<li>Ratio based, Semantic Grid System. This means that instead of grid classes  (col-lg) being apply to your HTML, the grid is stored entirely within your CSS and applied directly to the element you want to use it on.</li>
 							<li>Kill colspan madness. More semantic.</li>
 							<li>first number declares span. how many columns your div will span.</li>
 							<li>second number declares position.</li>
@@ -628,11 +625,8 @@ $large: 72em;
 
 					<aside class="notes">
 						<ul>
-							<li>Bootstrap has 4 breakpoints. xs, sm, md, lg.</li>
-							<li>What about xl or xxl? Or if you want fewer breakpoints</li>
-							<li>RWD should work with the content itself, not impose a class structure.</li>
+							<li>Again, RWD should work with the content itself, not impose a class structure.</li>
 							<li>Breakpoint gem is so easy Keanu approves</li>
-							<li>Singularity + Breakpoint, clearer syntax much easier to implement custon grids than what Bootstrap provides.</li>
 						</ul>
 					</aside>
 				</section>
@@ -675,6 +669,7 @@ $large: 72em;
 					<aside class="notes">
 						<ul>
 							<li>Magic happens with two combined.</li>
+							<li>Singularity + Breakpoint, clearer syntax much easier to implement custon grids than what Bootstrap provides.</li>
 						</ul>
 					</aside>
 				</section>
@@ -709,7 +704,7 @@ $large: 72em;
 					<aside class="notes">
 						<ul>
 							<li>CSS Stats is another tool that helps us in our process</li>
-							<li>We started with a very large CSS file that became unmanageable. Use of IDs as selectors. Crazy CSS that had really high specificity.</li>
+							<li>We started with a very large CSS file that became unmanageable. Use of IDs as selectors. Crazy CSS that had really high specificity. Overriding mess. Remember: no one wins in an !important war.</li>
 							<li>Goal: Reduce; Reuse; Refactor. We're getting there</li>
 							<li>See the payoff of your work reflected in a lighter CSS footprint for your sites.</li>
 						</ul>

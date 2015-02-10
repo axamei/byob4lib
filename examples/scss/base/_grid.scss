@@ -14,6 +14,6 @@ $large: 72em;
 @include sgs-change('debug', true);
 
 // Uncomment for grid visualization
-body {
-  @include background-grid($color: #ffcc99);
-}
+// body {
+//   @include background-grid($color: #ffcc99);
+// }
