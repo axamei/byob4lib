@@ -53,7 +53,9 @@ Singularity - [http://singularity.gs](http://singularity.gs)
 
 Susy - [http://susy.oddbird.net/](http://susy.oddbird.net/)
 
-###Sass tools (mentioned in our talk) that can replace Bootstrap:
+Toolkit (Responsive Web Design Mixin Library) - [https://github.com/at-import/toolkit](https://github.com/at-import/toolkit)
+
+###Sass tools (mentioned in our talk) that can be used to replace Bootstrap:
 Compass - http://compass-style.org/
 
 Bourbon - http://bourbon.io 
@@ -68,8 +70,10 @@ Singularity - http://singularity.gs
 
 Breakpoint - http://breakpoint-sass.com/ 
 
-###Articles about Sass:
+###Articles/Presentations about Sass:
 http://alistapart.com/article/dry-ing-out-your-sass-mixins 
+http://snugug.github.io/responsive-grids/#/
+
 
 ###Useful Sass resources (documentation, books, blogs, listservs):
 Documentation: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
@@ -97,6 +101,8 @@ SMACSS - https://smacss.com/book/
 ### Libsass C/C++ Implementation of a Sass Compilier
 Libsass - http://libsass.org/ (no more ruby dependency)
 Why LibSass? http://sass-lang.com/libsass  
+
+
 
 
 ###Haters gonna hate:
