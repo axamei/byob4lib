@@ -26,7 +26,7 @@ tools we will discuss are Grunt, Bower, and Sass tools like Singularity,
 Breakpoint, and Bourbon.
 
 
-Available via http://axapu.github.io/2015-code4lib-byob/slides/#/
+Available via http://axapu.github.io/byob4lib/slides/
 
 ## Resources
 
@@ -53,7 +53,9 @@ Singularity - [http://singularity.gs](http://singularity.gs)
 
 Susy - [http://susy.oddbird.net/](http://susy.oddbird.net/)
 
-###Sass tools (mentioned in our talk) that can replace Bootstrap:
+Toolkit (Responsive Web Design Mixin Library) - [https://github.com/at-import/toolkit](https://github.com/at-import/toolkit)
+
+###Sass tools (mentioned in our talk) that can be used to replace Bootstrap:
 Compass - http://compass-style.org/
 
 Bourbon - http://bourbon.io 
@@ -68,8 +70,10 @@ Singularity - http://singularity.gs
 
 Breakpoint - http://breakpoint-sass.com/ 
 
-###Articles about Sass:
+###Articles/Presentations about Sass:
 http://alistapart.com/article/dry-ing-out-your-sass-mixins 
+http://snugug.github.io/responsive-grids/#/
+
 
 ###Useful Sass resources (documentation, books, blogs, listservs):
 Documentation: http://sass-lang.com/documentation/file.SASS_REFERENCE.html
@@ -82,6 +86,13 @@ The Sass Way http://thesassway.com/
 
 ### Why Sass?
 Transitioning to SCSSS at Scale (ETSY)- https://codeascraft.com/2015/02/02/transitioning-to-scss-at-scale/
+
+### Princeton University Library Examples
+Library Base Drupal Theme - https://github.com/pulibrary/pul_base (implemented using Drupal's Omega [4] theme https://www.drupal.org/project/omega)
+Example Sites:
+http://library.princeton.edu/
+http://rbsc.princeton.edu/versailles
+
 
 ### Thoughts on Maintainable CSS
 CSS Architecture for Drupal 8 - https://www.drupal.org/node/1887918
@@ -98,3 +109,7 @@ http://snugug.github.io/winning-the-web/
 http://notes.gross.is/post/43508972396/please-stop-using-twitter-bootstrap 
 
 http://fourword.fourkitchens.com/article/you-dont-need-bootstrap 
+
+##Sources for presentation
+
+
