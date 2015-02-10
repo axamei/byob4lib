@@ -366,27 +366,6 @@
 				<section>
 					<p style="margin-bottom:0;">Modular Components / Partials</p>
 					<div class="scss">
-						<p>main.scss (Manifest):</p>
-						<pre class="language-scss"><code class="language-scss">// Import external libraries.
-@import "compass";
-@import "breakpoint";
-@import "singularitygs";
-@import "toolkit";
-@import "vendor/bourbon/bourbon";
-@import "vendor/base/base";
-
-@import "variables/**/*";
-@import "abstractions/**/*";
-@import "base/**/*";
-@import "components/branding";
-@import "components/header";
-@import "components/footer";
-@import "components/menus/menu--main";
-@import "components/search/search--header";
-						</code></pre>
-					</div>
-					
-					<div class="css">
 						<p>Directory Structure:</p>
 						<pre style="font-size:18px;">byob-sass/
 |
@@ -409,6 +388,26 @@
 |
 -- main.scss            # Manifest							
 						</pre>
+					</div>
+					<div class="css">
+						<p>main.scss (Manifest):</p>
+						<pre class="language-scss"><code class="language-scss">// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+@import "vendor/bourbon/bourbon";
+@import "vendor/base/base";
+
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/branding";
+@import "components/header";
+@import "components/footer";
+@import "components/menus/menu--main";
+@import "components/search/search--header";
+						</code></pre>
 					</div>
 					<aside class="notes">
 						
