@@ -88,12 +88,13 @@ The Sass Way http://thesassway.com/
 ### Why Sass?
 Transitioning to SCSSS at Scale (ETSY)- https://codeascraft.com/2015/02/02/transitioning-to-scss-at-scale/
 
-### Princeton University Library Examples
+### Princeton University Library Sites Using this Methodology
 Library Base Drupal Theme - https://github.com/pulibrary/pul_base (implemented using Drupal's Omega [4] theme https://www.drupal.org/project/omega)
 
 Example Sites:
-http://library.princeton.edu/
-http://rbsc.princeton.edu/versailles
+* http://library.princeton.edu/
+* http://rbsc.princeton.edu/versailles
+* http://libguides.princeton.edu
 
 
 ### Thoughts on Maintainable CSS
