@@ -3,7 +3,12 @@
 @import "compass/reset";
 @import "breakpoint";
 @import "singularitygs";
-
+@import "vendor/bourbon/bourbon";
+@import "../base/base";
 @import "abstractions/mixins";
 @import "base/grid";
 @import "base/layout";
+@import "components/bullet-points";
+@import "components/footer";
+@import "components/hero-unit";
+@import "components/menu--main";
