@@ -103,7 +103,7 @@ CSS Architecture for Drupal 8 - https://www.drupal.org/node/1887918
 SMACSS - https://smacss.com/book/
 
 ### Libsass C/C++ Implementation of a Sass Compilier
-Libsass - http://libsass.org/ (no more ruby dependency)
+Libsass - http://libsass.org/ (removes the ruby dependency to compile SCSS)
 
 Why LibSass? http://sass-lang.com/libsass  
 
