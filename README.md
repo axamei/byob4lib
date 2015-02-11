@@ -86,7 +86,7 @@ Scalable and Modular Architecture for CSS - https://smacss.com/
 The Sass Way http://thesassway.com/
 
 ### Why Sass?
-Transitioning to SCSSS at Scale (ETSY)- https://codeascraft.com/2015/02/02/transitioning-to-scss-at-scale/
+Transitioning to SCSS at Scale (ETSY)- https://codeascraft.com/2015/02/02/transitioning-to-scss-at-scale/
 
 ### Princeton University Library Sites Using this Methodology
 Library Base Drupal Theme - https://github.com/pulibrary/pul_base (implemented using Drupal's Omega [4] theme https://www.drupal.org/project/omega)
