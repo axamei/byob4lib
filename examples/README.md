@@ -22,7 +22,7 @@ grunt serve
 ## Examples
 
 
-* http://localhost:9001/index.html (Asymetic Grid Example)
+* http://localhost:9001/index.html (Asymmetric Grid Example)
 * http://localhost:9001/bourbon.html (Bourbon/Bitters/Refills Example)
 
 ## Recompile SASS to CSS
